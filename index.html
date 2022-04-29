@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Chacal</title>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/login-style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/base.css">
+</head>
+
+<body>
+
+	<main>
+		<form class="tela-login">
+			<h1 id="login">Login</h1>
+
+			<input type="text" class="input input--icone input--user" id="username" placeholder="Username" maxlength="8" aria-label="Insira seu usuário" required>
+		
+			<input type="password" class="input input--icone input--senha" id="senha" name="pass" placeholder="Password" maxlength="10" aria-label="Insira sua senha" required>
+	
+			<button type="submit" onclick="acessar(); return false">Entrar</button>
+			<span class="problemas--info">Forgot password? <a onclick="signup()" class="problemas--solution" id="sign-up" href=""> Sign Up</a></span>
+
+		</form>
+	</main>
+
+	<footer>
+		<p>Coded By <strong><a href="https://www.instagram.com/mryeagger" style="text-decoration: none; color: ghostwhite;" target="_blank">Mr Yeagger</a></strong></p>
+	</footer>
+
+	<script src="assets/js/js-login.js"></script>
+
+</body>
+
+</html>

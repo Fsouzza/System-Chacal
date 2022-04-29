@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+
+.cabecalho__item, .cabecalho__lista--link, .contato{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: .86rem;
+	color: #edf0f1;
+	text-decoration: none;
+} 
+
+
+.cabecalho{
+	background-color: #3b3c42;
+	display: flex;
+	text-align: center;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1.1rem 4%;
+	position: fixed;
+	width: 100vw;
+	z-index: 98;
+}
+
+
+.window-scroll{
+	border-bottom: #24252A;
+	border-bottom-width: 2px;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.45);
+}
+
+
+.cabecalho__logo{
+	padding-right: 3rem;
+	align-items: center;
+	margin-right: auto;
+}
+
+.cabecalho__lista{
+	list-style: none;
+}
+
+.cabecalho__item{
+	display: inline-block;
+	padding: 0px 1rem;
+}
+
+.cabecalho__lista--link{
+	transition: all 0.3s ease-in 0s;
+}
+
+.cabecalho__lista--link:hover{
+	color: rgb(224, 77, 77);
+}
+
+.cabecalho__lista--link.ativo{
+	color: #c93939;
+	font-weight: bold;
+	font-size: 1.12rem;
+
+}
+
+
+.cta{
+	margin-left: 20px;
+	padding: .60rem 1.75rem;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	list-style: none;
+	text-decoration: none;
+	color: aliceblue;
+	transition: all 0.3s ease-in 0s;
+	cursor: pointer;
+	font-size: .88rem;
+}
+
+.cta:hover{
+	background-color: aliceblue;
+	color: #c93939;
+}
+
+
+.menu{
+	display: none;
+}
+
+.cabecalho__sair{
+	display: none;
+}
+
+.apps{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 395px){
+
+	.cabecalho{
+		display: flex;
+   		flex-direction: row;
+    	align-items: center;
+		justify-content: space-around;
+		position: absolute;
+	}
+
+
+	.cabecalho__logo{
+		display: none;
+	}
+
+	.menu{
+		display: block;
+		border: none;
+		background:#3b3c42;
+		color: white;
+		font-size: 1.45rem;
+		position: absolute;
+		left: .5rem;
+		top: .87rem;
+	}
+
+	.apps{
+		display: block;
+		border: none;
+		background:#3b3c42;
+		color: white;
+		font-size: 1.45rem;
+		position: absolute;
+		right: .5rem;
+		top: .86rem;
+	}
+
+
+	.cta{
+		display: none;
+	}
+
+	.cabecalho{
+		display: none;
+	}
+
+}

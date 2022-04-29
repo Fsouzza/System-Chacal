@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap');
+
+
+.tela-login{
+	background-color: var(--cor-fundo);
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--branco);
+	border-radius: 12px;
+	box-shadow: var(--sombra-tela);
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	color: var(--branco);
+	padding: 3.24rem;
+	border-radius: 14px;
+	box-shadow: var(--sombra-tela);
+}
+
+
+
+#login{
+	font-family: 'Arimo', sans-serif;
+	font-size: 2.1rem;
+	align-self: flex-start;
+	margin-bottom: 2rem;
+    margin-top: 0;
+    margin-left: 1.25rem;
+    position: relative;
+}
+
+
+#login:before{
+	content: '';
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    bottom: 1px;
+    left: 0;
+    border-radius: 25%;
+    background: var(--gradient-fundo);
+}
+
+
+.input{
+	display: inline-block;
+	box-sizing: content-box;
+    margin: .4rem .5rem;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+	
+}
+
+
+.input--icone{
+	padding-left: 4.25rem;
+    background-repeat: no-repeat;
+    background-position: left .75rem center;
+}
+
+
+.input--user{
+	background-image: url(../img/user.svg);
+	height: 32.5px;
+}
+
+
+.input--senha{
+	background-image: url(../img/lock.svg);
+	height: 32.8px;
+}
+
+
+
+.input:focus{
+	border-color: #FF6347;
+	border-width: 2.8px;
+	border-radius: 8px;
+	transition: 0.3s;
+}
+
+
+button{
+    background-color:#4169E1;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    margin-top: .4rem;
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 18px;
+ }
+
+button:hover{
+	background-color: #006eff;
+	cursor: pointer;
+	transition: 0.7s;
+	transform: translate(1.2);
+}
+
+
+span{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	font-weight: 300;
+	margin-top: 2rem;
+}
+
+.problemas--info{
+	font-family: 'Inconsolata', monospace;
+	font-size: .86rem;
+	align-items: center;
+}
+
+
+.problemas--solution{
+	font-family: 'Inconsolata', monospace;
+	font-weight: 300;
+	font-size: 1rem;
+	color: #FF6347;
+	text-decoration: none;
+	padding-left: 0.5rem;
+}
+
+
+footer{
+	position: absolute;
+	bottom: 12px;
+	width: 95%;
+	text-align: center;
+}
+
+
+
+@media screen and (min-width: 380px){
+	body{
+	height: 100vh;
+	}
+
+
+	footer{
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	text-align: right;
+	}
+}

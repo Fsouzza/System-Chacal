@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html pt-br>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./assets/css/menu.css">
+	<link rel="stylesheet" href="./assets/css/cabecalho.css">
+	<link rel="stylesheet" href="./assets/css/produtos.css">
+	<link rel="stylesheet" href="./assets/css/perguntas.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+	<link rel="stylesheet" href="./assets/css/planos.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<title>Home | Operacional</title>
+</head>
+
+<body>
+	
+	<header class="cabecalho">
+		<img src="" class="cabecalho__logo" alt="Imagem do logo da empresa">
+		<ul class="cabecalho__lista">
+			<li class="cabecalho__item"><a class="cabecalho__lista--link ativo" href="home.html">Home</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href=".planos">Planos</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#">FAQ</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#">Endereço</a></li>
+		</ul>
+		<a class="cta" href="#">Contato</a>
+		<button class="menu" aria-label="Menu"><i class="uil uil-bars"></i></button>
+		<button id= "open-apps" class="apps" aria-label="abrir menu flutuante"><i class="uil uil-angle-down"></i></button>
+		<button id="close-apps" aria-label="fechar menu flutuante"><i class="uil uil-angle-up"></i></button>
+
+	</header>
+
+	<div class="ul-mobile">
+		<ul class="mobile__lista">
+			<li class="mobile__item"><a class="mobile__lista--link ativo" href="home.html">Home</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#">Planos</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#">FAQ</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#">Endereço</a></li>
+		</ul>
+
+		<a class="cta-mobile" href="#">Contato</a>
+	</div>
+
+	
+	<nav class="navegacao">
+		<ul>
+			<li class="lista active">
+				<a href="#">
+					<span class="icone"><ion-icon name="person-outline"></ion-icon></span>
+					<span class="titulo">Operacional</span>
+				</a>
+			</li>
+			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
+				<a href="#">
+					<span class="icone"><ion-icon name="card-outline"></ion-icon></span>
+					<span class="titulo">Financeiro</span>
+				</a>
+			</li>
+			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
+				<a href="#">
+					<span class="icone"><ion-icon name="business-outline"></ion-icon></span>
+					<span class="titulo">Comercial</span>
+				</a>
+			</li>
+			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
+				<a href="#">
+					<span class="icone"><ion-icon name="people-outline"></ion-icon></span>
+					<span class="titulo">RH</span>
+				</a>
+			</li>
+			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
+				<a href="#">
+					<span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
+					<span class="titulo">Configurações</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="guia-sistema.html">
+					<span class="icone"><ion-icon name="help-circle-outline"></ion-icon></span>
+					<span class="titulo">Ajuda</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="index.html">
+					<span class="icone"><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class="titulo">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+<section class="categorias">
+	<div class="container categorias__container">
+		<div class="categoria-esquerda">
+			<h1>Categorias</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloribus nesciunt nihil saepe hic quod eligendi magni expedita dolorum dignissimos nulla error reprehenderit fugiat, soluta ipsum quisquam vel quidem in.</p>
+			<a href="#" class="btn">About Us <i class="uil uil-caret-right"></i></a>
+		</div>
+
+
+		<div class="categoria-direita">
+			<article class="produtos"><a class="ref" href="#">
+       		 	<figure class="titulo">
+					<img class="titulo__imagem" src="./assets/img/structure.png" alt="imgem funcionário">
+            		<figcaption class="titulo__produto">Funcionários</figcaption>
+					<i class="uil uil-plus-square"></i>
+			 	</figure>
+
+        		<div class="informacao">
+            		<h3> Funcionários [+] </h3><br>
+            		<p>* Lista de funcionários</p>
+					<p>* Informe de desempenho</p>
+					<p>* Consulta de informações</p>
+        		</div></a>
+			</article>
+
+    		<article class="produtos"><a class="ref" href="#">
+        		<figure class="titulo">
+					<img class="titulo__imagem" src="./assets/img/location.png" alt="imgem transportadora">
+            		<figcaption class="titulo__produto">Transportadoras</figcaption>
+					<i class="uil uil-plus-square"></i>
+				</figure>
+
+        	<div class="informacao">
+            	<h3> Transportadores [+] </h3><br>
+            	<p>* Lista de transportadoras</p>
+				<p>* Situação cadastral</p>
+				<p>* Consulta de dados</p>
+				</div></a>
+    		</article>
+
+			<article class="produtos"><a class="ref" href="#">
+        		<figure class="titulo">
+					<img class="titulo__imagem" src="./assets/img/briefcase.png" alt="imgem simbolizando documentos">
+            		<figcaption class="titulo__produto">Documentos</figcaption>
+					<i class="uil uil-plus-square"></i>
+				</figure>
+
+        		<div class="informacao">
+            		<h3> Documentos [+] </h3><br>
+            		<p>* Ordem de Serviço</p>
+					<p>* Recibos</p>
+					<p>* Folha de Presença</p>
+				</div></a>
+    		</article>
+		</div>
+	</div>
+</section>
+
+
+<section class="planos container">
+	<h2 class="planos__titulo">Plano Basic</h2>
+	<ul class="planos__cartoes">
+		<li class="cartao cartao--start">
+			<h3 class="cartao__titulo">Pallet</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 15,00</em></p>
+				<p class="cartao__texto">-Pgto dinheiro ou PIX</p>
+				<p class="cartao__texto">-Emissão de recibo</p>
+				<p class="cartao__texto">-Enviar comprovante</p>
+				<a href="plano.html" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
+			</article>
+		</li>
+		<li class="cartao cartao--ultra">
+			<h3 class="cartao__titulo">Batido</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 20,00</em></p>
+				<p class="cartao__texto">-Pgto dinheiro ou PIX</p>
+				<p class="cartao__texto">-Emissão de recibo</p>
+				<p class="cartao__texto">-Enviar comprovante</p>
+				<a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
+			</article>
+		</li>
+	</ul>
+
+	<h2 class="planos__titulo">Plano Ultra</h2>
+	<ul class="planos__cartoes">
+		<li class="cartao cartao--start">
+			<h3 class="cartao__titulo">Pallet</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 18,00</em></p>
+				<p class="cartao__texto">-Solicitar tela de CNPJ</p>
+				<p class="cartao__texto">-Emissão de NFS e boleto</p>
+				<p class="cartao__texto">-Prazo cinco (05) dias</p>
+				<p class="cartao__texto">-Faturamento quinzenal</p>
+				<a href="plano.html" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
+			</article>
+		</li>
+		<li class="cartao cartao--ultra">
+			<h3 class="cartao__titulo">Batido</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 23,00</em></p>
+				<p class="cartao__texto">-Solicitar tela de CNPJ</p>
+				<p class="cartao__texto">-Emissão de NFS e boleto</p>
+				<p class="cartao__texto">-Prazo cinco (05) dias</p>
+				<p class="cartao__texto">-Faturamento quinzenal</p>
+				<a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
+			</article>
+		</li>
+	</ul>
+
+	<h2 class="planos__titulo">Plano Mega</h2>
+	<ul class="planos__cartoes">
+		<li class="cartao cartao--start">
+			<h3 class="cartao__titulo">Van | Kombi</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 150</em></p>
+				<p class="cartao__texto">-Emissão NFS, ou à vista</p>
+				<p class="cartao__texto">-Tipo de pgto por Frota</p>
+				<p class="cartao__texto">-Prazo cinco dias, ou pgto no ato</p>
+				<a href="plano.html" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
+			</article>
+		</li>
+		<li class="cartao cartao--ultra">
+			<h3 class="cartao__titulo">Bau</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 310</em></p>
+				<p class="cartao__texto">-Emissão NFS, ou à vista</p>
+				<p class="cartao__texto">-Tipo de pgto por Frota</p>
+				<p class="cartao__texto">-Prazo cinco dias, ou pgto no ato</p>
+				<a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
+			</article>
+		</li>
+		<li class="cartao cartao--mega">
+			<h3 class="cartao__titulo">Tôco | Truck</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 450</em></p>
+				<p class="cartao__texto">-Emissão NFS, ou à vista</p>
+				<p class="cartao__texto">-Tipo de pgto por Frota</p>
+				<p class="cartao__texto">-Prazo cinco dias, ou pgto no ato</p>
+				<a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
+			</article>
+		</li>
+		<li class="cartao cartao--topmega">
+			<h3 class="cartao__titulo">Carreta | CNTR</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 590</em></p>
+				<p class="cartao__texto">-Emissão NFS, ou à vista</p>
+				<p class="cartao__texto">-Tipo de pgto por Frota</p>
+				<p class="cartao__texto">-Prazo cinco dias, ou pgto no ato</p>
+				<a href="plano.html" class="cartao__botao cartao__botao--topmega botao">Assinar plano</a>
+			</article>
+		</li>
+		<li class="cartao cartao--ultramega">
+			<h3 class="cartao__titulo">Bitrem</h3>
+			<article class="cartao__conteudo">
+				<p class="cartao__preco"><em>R$ 900</em></p>
+				<p class="cartao__texto">-Emissão NFS, ou à vista</p>
+				<p class="cartao__texto">-Tipo de pgto por Frota</p>
+				<p class="cartao__texto">-Prazo cinco dias, ou pgto no ato</p>
+				<a href="" class="cartao__botao cartao__botao--ultramega botao">Assinar plano</a>
+			</article>
+		</li>
+	</ul>
+</section>
+
+
+<section class="perguntas">
+	<h2 class="titulo__perguntas">FAQ - dúvidas sobre o sistema</h2>
+	<div class="perg__container">
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>Como eu sei em que aba devo ir?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>O que devo fazer para recuperar minha senha?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>Eu preciso ter internet para acessar o sistema?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>Devemos emitir recibos para todos?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>Como faço para consultar os preços?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>Como faço para imprimir o pdf dos documentos</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>Como compartilhar o endereço da filial?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>Problemas com bugs e bootstrap?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+		<article class="perg">
+			<div class="perg__icon"><i class="uil uil-plus"></i></div>
+			<div class="pergunta__resposta">
+				<h4>Como faço para consultar os preços?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam magnam fuga error corrupti iure aliquam doloribus nostrum inventore nesciunt, ut impedit atque veniam porro rerum beatae at perspiciatis eligendi?</p>
+			</div>
+		</article>
+	</div>
+</section>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/home-oper.js"></script>
+
+</body>
+
+</html>

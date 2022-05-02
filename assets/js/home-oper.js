@@ -41,3 +41,34 @@ faqs.forEach(perg => {
 
 	})
 })
+
+
+const btnMenu = document.querySelector('.menu')
+const navBar = document.querySelector('.navegacao')
+
+btnMenu.addEventListener('click', () => {
+	navBar.classList.toggle('navegacao--ativo')
+})
+
+
+
+
+const btnPlus = document.querySelector('#open-apps');
+const menu2 = document.querySelector('.ul-mobile');
+const btnClose = document.querySelector('#close-apps');
+
+btnPlus.addEventListener('click', () => {
+	menu2.classList.toggle('apps-open');
+	btnClose.style.display = "inline-block";
+	btnPlus.style.display = "none";
+
+})
+
+
+const closeMenu2 = () => {
+		menu2.classList.remove('apps-open');
+		btnClose.style.display = "none";
+		btnPlus.style.display = "inline-block";
+}
+
+btnClose.addEventListener('click', closeMenu2);

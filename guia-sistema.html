@@ -6,58 +6,76 @@
 	<link rel="stylesheet" href="./assets/css/menu.css">
 	<link rel="stylesheet" href="./assets/css/cabecalho.css">
 	<link rel="stylesheet" href="./assets/css/produtos.css">
+	<link rel="stylesheet" href="./assets/css/perguntas.css">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-	<title> Guia Completo | Chacal</title>
+	<link rel="stylesheet" href="./assets/css/planos.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<title>Home | Operacional</title>
 </head>
 
 <body>
+	
 	<header class="cabecalho">
-		<button class="cabecalho__menu" aria-label="Menu"><i class="uil uil-bars"></i></button>
-		<button class="cabecalho__sair" aria-label="Menu-Sair"><i class="uil uil-multiply"></i></button>
 		<img src="" class="cabecalho__logo" alt="Imagem do logo da empresa">
 		<ul class="cabecalho__lista">
-			<li class="cabecalho__item"><a class="cabecalho__lista--link ativo" href="home-operacional.html">Home</a></li>
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#">Planos</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link ativo" href="home.html">Home</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href=".planos">Planos</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#">FAQ</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#">Endereço</a></li>
 		</ul>
 		<a class="cta" href="#">Contato</a>
+		<button class="menu" aria-label="Menu"><i class="uil uil-bars"></i></button>
+		<button id= "open-apps" class="apps" aria-label="abrir menu flutuante"><i class="uil uil-angle-down"></i></button>
+		<button id="close-apps" aria-label="fechar menu flutuante"><i class="uil uil-angle-up"></i></button>
+
 	</header>
 
-	<nav class="navegação">
+	<div class="ul-mobile">
+		<ul class="mobile__lista">
+			<li class="mobile__item"><a class="mobile__lista--link ativo" href="home.html">Home</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#">Planos</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#">FAQ</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#">Endereço</a></li>
+		</ul>
+
+		<a class="cta-mobile" href="#">Contato</a>
+	</div>
+
+	
+	<nav class="navegacao">
 		<ul>
 			<li class="lista">
-				<a href="home-operacional.html">
+				<a href="home.html">
 					<span class="icone"><ion-icon name="person-outline"></ion-icon></span>
 					<span class="titulo">Operacional</span>
 				</a>
 			</li>
-			<li class="lista">
+			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
 				<a href="#">
 					<span class="icone"><ion-icon name="card-outline"></ion-icon></span>
 					<span class="titulo">Financeiro</span>
 				</a>
 			</li>
-			<li class="lista">
+			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
 				<a href="#">
 					<span class="icone"><ion-icon name="business-outline"></ion-icon></span>
 					<span class="titulo">Comercial</span>
 				</a>
 			</li>
-			<li class="lista">
+			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
 				<a href="#">
 					<span class="icone"><ion-icon name="people-outline"></ion-icon></span>
 					<span class="titulo">RH</span>
 				</a>
 			</li>
-			<li class="lista">
+			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
 				<a href="#">
 					<span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
 					<span class="titulo">Configurações</span>
 				</a>
 			</li>
 			<li class="lista active">
-				<a href="#">
+				<a href="guia-sistema.html">
 					<span class="icone"><ion-icon name="help-circle-outline"></ion-icon></span>
 					<span class="titulo">Ajuda</span>
 				</a>

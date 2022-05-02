@@ -4,7 +4,7 @@
 
 .tela-login{
 	background-color: var(--cor-fundo);
-	width: 350px;
+	width: 340px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -16,7 +16,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 	color: var(--branco);
-	padding: 3.24rem;
+	padding: 3rem 2rem;
 	border-radius: 14px;
 	box-shadow: var(--sombra-tela);
 }
@@ -47,9 +47,10 @@
 
 
 .input{
+	width: 100%;
+	box-sizing: border-box;
 	display: inline-block;
-	box-sizing: content-box;
-    margin: .4rem .5rem;
+    margin: .4rem 0;
     border-color: rgba(0,0,0,0.1);
     border-radius: 5px;
     outline: none;
@@ -90,7 +91,7 @@ button{
     background-color:#4169E1;
     border: none;
     padding: 0.75rem;
-    width: 100%;
+    width: 98%;
     margin-top: .4rem;
     border-radius: 8px;
     color: aliceblue;
@@ -133,7 +134,7 @@ span{
 
 footer{
 	position: absolute;
-	bottom: 12px;
+	bottom: 8px;
 	width: 95%;
 	text-align: center;
 }

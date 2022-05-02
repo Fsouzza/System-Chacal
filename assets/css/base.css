@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
 :root{
-	--gradient-fundo: linear-gradient(135deg,rgb(197, 54, 54),#a52232);
-	--fonte-principal: font-family: Arial, Helvetica, sans-serif;
-	--cor-fundo: rgba(0,0,0,0.7);
+	--gradient: linear-gradient(135deg,rgb(197, 54, 54),#a52232);
+	--cor-fundo: #3b3c42;
+	
+	--cor-sombra: rgba(0,0,0,0.7);
 	--sombra-tela: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+	--fonte-principal: font-family: 'Montserrat', sans-serif;
 
 	--branco: white;
 }
+
+
+@import url(./menu.css);
 
 *{
 	box-sizing: border-box;
@@ -14,11 +23,24 @@
 }
 
 body{
-	display: flex;
-	width: 100vw;
-	min-height: 100vh;
+
 	align-items: center;
 	justify-content: center;
-	background-image: var(--gradient-fundo);
 	font-family: var(--fonte-principal);
+	background-color: var(--cor-fundo)
 }
+
+
+a, ul, li, ol{
+	color: inherit;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+em{
+    font-weight: 500;
+    text-decoration: none;
+}
+
+

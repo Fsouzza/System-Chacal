@@ -1,28 +1,21 @@
-@font-face {
-    font-family: 'icones';
-    src: url(../font/icones.ttf);
-}
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-
-
-.cabecalho__item, .cabecalho__lista--link, .contato{
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	font-size: .86rem;
-	color: #edf0f1;
-	text-decoration: none;
-} 
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
 
 
 .cabecalho{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	color: #edf0f1;
+	text-decoration: none;
+	position: fixed;
+	padding: 1.12rem 5%;
+	box-sizing: border-box;
 	background-color: #3b3c42;
 	display: flex;
 	text-align: center;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 1.1rem 4%;
-	position: fixed;
 	width: 100vw;
 	z-index: 98;
 }
@@ -31,13 +24,13 @@
 .window-scroll{
 	border-bottom: #24252A;
 	border-bottom-width: 2px;
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.45);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 
 .cabecalho__logo{
 	padding-right: 3rem;
-	align-items: center;
+	align-items: flex-start;
 	margin-right: auto;
 }
 
@@ -51,34 +44,34 @@
 }
 
 .cabecalho__lista--link{
-	transition: all 0.3s ease-in 0s;
+	transition: all 300ms ease-in;
 }
 
 .cabecalho__lista--link:hover{
 	color: rgb(224, 77, 77);
+	font-weight: 400;
 }
+
 
 .cabecalho__lista--link.ativo{
 	color: #c93939;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 1.12rem;
 
 }
 
 
 .cta{
+	font-weight: 500;
 	margin-left: 20px;
 	padding: .60rem 1.75rem;
 	background-color: rgba(0, 136, 169, 1);
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
-	list-style: none;
-	text-decoration: none;
 	color: aliceblue;
 	transition: all 0.3s ease-in 0s;
-	cursor: pointer;
-	font-size: .88rem;
+	font-size: .94rem;
 }
 
 .cta:hover{
@@ -86,65 +79,113 @@
 	color: #c93939;
 }
 
-
-.menu{
-	display: none;
-}
-
-.cabecalho__sair{
-	display: none;
-}
-
-.apps{
+.ul-mobile, .menu, .apps{
 	display: none;
 }
 
 
+#close-apps, #close-apps{
+	display: none;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-size: 2rem;
+}
 
-@media screen and (max-width: 395px){
+
+
+/*  ------------------ MOBILE VERSION ----------------- */
+
+@media screen and (max-width: 813px){
+
+	.window-scroll{
+		display: none;
+	}
+
+	#close-apps{
+		display: none;
+		border: none;
+		background-color: transparent;
+		color: white;
+		font-size: 2rem;
+	}
 
 	.cabecalho{
 		display: flex;
-   		flex-direction: row;
     	align-items: center;
-		justify-content: space-around;
-		position: absolute;
+		justify-content: space-between;
+		position: fixed;
 	}
 
 
-	.cabecalho__logo{
+	.cabecalho__lista, .cabecalho__item, .cabecalho__lista--link, .cabecalho__logo, .cta{
 		display: none;
 	}
 
+
 	.menu{
-		display: block;
+		display: flex;
 		border: none;
-		background:#3b3c42;
+		background-color: transparent;
 		color: white;
 		font-size: 1.45rem;
-		position: absolute;
-		left: .5rem;
-		top: .87rem;
 	}
 
 	.apps{
-		display: block;
+		display: flex;
 		border: none;
-		background:#3b3c42;
+		background-color: transparent;
 		color: white;
-		font-size: 1.45rem;
+		font-size: 2rem;
+	}
+
+	.ul-mobile{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 500;
+		font-size: .86rem;
+		color: #edf0f1;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 1.26rem;
 		position: absolute;
-		right: .5rem;
-		top: .86rem;
+		top: -150vh;
+		background-color: #3b3c42;
+		text-transform: uppercase;
+		transition-timing-function: ease-in-out;
+		transition-duration: 500ms;
+		
 	}
 
-
-	.cta{
-		display: none;
+	.apps-open{
+		right: 5px;
+		width: 55vw;
+		top: 4.66rem;
+		z-index: 2;
+		position: fixed;
 	}
-
-	.cabecalho{
-		display: none;
+	
+	
+	.mobile__item{
+		width: 55vw;
+		padding: .56rem;
+		border-top: 1.5px solid #c93939;
 	}
-
+	
+	.mobile__lista--link.ativo{
+		color: #c93939;
+		font-weight: bold;
+		font-size: 1rem;
+	
+	}
+	
+	
+	.cta-mobile{
+		padding: .58rem;
+		background-color: transparent;
+		border-top: 1.5px solid #c93939;
+		list-style: none;
+		text-decoration: none;
+	}
+	
 }

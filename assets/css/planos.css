@@ -14,44 +14,94 @@
     border-radius: 5px;
 }
 
+.botao:hover{
+    color: #fff;
+}
+
+
+.botao:focus{
+    color: #fff;
+}
+
+
 .cartao--start {
-    color: #155266;
+    color: var(--plano-azul);
 }
 
 .cartao--ultra {
-    color: #7f2da0;
+    color: var(--plano-roxo);
 }
 
 .cartao--mega {
-    color: #992727;
+    color: var(--plano-vermelho);
 }
 
 .cartao--topmega {
-    color: #381566;
+    color: var(--plano-lilas);
 }
 
 .cartao--ultramega {
-    color: #156627;
+    color: var(--plano-verde);
 }
 
 .cartao__botao--start {
-    border-color: #155266;
+    border-color: var(--plano-azul);
+}
+
+.cartao__botao--start:hover{
+    background-color: var(--plano-azul);
+}
+
+.cartao__botao--start:focus{
+    background-color: var(--plano-azul);
 }
 
 .cartao__botao--ultra {
-    border-color: #7f2da0;
+    border-color: var(--plano-roxo);
+}
+
+.cartao__botao--ultra:hover{
+    background-color: var(--plano-roxo);
+}
+
+.cartao__botao--ultra:focus{
+    background-color: var(--plano-roxo);
 }
 
 .cartao__botao--mega {
-    border-color: #992727;
+    border-color: var(--plano-vermelho);
+}
+
+.cartao__botao--mega:hover{
+    background-color: var(--plano-vermelho);
+}
+
+.cartao__botao--mega:focus{
+    background-color: var(--plano-vermelho);
 }
 
 .cartao__botao--topmega {
-    border-color: #381566;
+    border-color: var(--plano-lilas);
+}
+
+.cartao__botao--topmega:hover{
+    background-color: var(--plano-lilas);
+}
+
+.cartao__botao--topmega:focus{
+    background-color: var(--plano-lilas);
 }
 
 .cartao__botao--ultramega {
-    border-color: #156627;
+    border-color: var(--plano-verde);
+}
+
+.cartao__botao--ultramega:hover{
+    background-color: var(--plano-verde);
+}
+
+.cartao__botao--ultramega:focus{
+    background-color: var(--plano-verde);
 }
 
 
@@ -59,9 +109,10 @@
 
 .planos {
     font-family: 'Montserrat', sans-serif;
-    background-color: #4F4C4C;
+    background-color: var(--cor-fundo-secund);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-left: 3rem;
     width: 100%;
 }
 
@@ -140,6 +191,10 @@
 
 
 @media screen and (max-width: 813px) {
+
+    .planos {
+        padding-left: 0;
+    }
 
     .planos__titulo {
         color: #bebcbc;

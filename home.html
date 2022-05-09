@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="./assets/css/cabecalho.css">
 	<link rel="stylesheet" href="./assets/css/produtos.css">
 	<link rel="stylesheet" href="./assets/css/perguntas.css">
+	<link rel="stylesheet" href="./assets/css/about-us.css">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 	<link rel="stylesheet" href="./assets/css/planos.css">
 	<link rel="stylesheet" href="./assets/css/base.css">
@@ -19,8 +20,8 @@
 		<img src="" class="cabecalho__logo" alt="Imagem do logo da empresa">
 		<ul class="cabecalho__lista">
 			<li class="cabecalho__item"><a class="cabecalho__lista--link ativo" href="home.html">Home</a></li>
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" href=".planos">Planos</a></li>
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#">FAQ</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#planos">Planos</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#FAQ">FAQ</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#">Endereço</a></li>
 		</ul>
 		<a class="cta" href="#">Contato</a>
@@ -33,9 +34,9 @@
 	<div class="ul-mobile">
 		<ul class="mobile__lista">
 			<li class="mobile__item"><a class="mobile__lista--link ativo" href="home.html">Home</a></li>
-			<li class="mobile__item"><a class="mobile__lista--link" href="#">Planos</a></li>
-			<li class="mobile__item"><a class="mobile__lista--link" href="#">FAQ</a></li>
-			<li class="mobile__item"><a class="mobile__lista--link" href="#">Endereço</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#planos">Planos</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#FAQ">FAQ</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#endereco">Endereço</a></li>
 		</ul>
 
 		<a class="cta-mobile" href="#">Contato</a>
@@ -94,7 +95,7 @@
 		<div class="categoria-esquerda">
 			<h1>Categorias</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloribus nesciunt nihil saepe hic quod eligendi magni expedita dolorum dignissimos nulla error reprehenderit fugiat, soluta ipsum quisquam vel quidem in.</p>
-			<a href="#" class="btn">About Us <i class="uil uil-caret-right"></i></a>
+			<a href="#about-us" class="btn">About Us <i class="uil uil-caret-right"></i></a>
 		</div>
 
 
@@ -148,7 +149,7 @@
 </section>
 
 
-<section class="planos container">
+<section class="planos container" id="planos">
 	<h2 class="planos__titulo">Plano Basic</h2>
 	<ul class="planos__cartoes">
 		<li class="cartao cartao--start">
@@ -255,8 +256,187 @@
 </section>
 
 
-<section class="perguntas">
-	<h2 class="titulo__perguntas">FAQ - dúvidas sobre o sistema</h2>
+<section class="about-us" id="about-us">
+		<h2 class="titulo__secao">About Us</h2>
+	<div class="about__quadro-container">
+
+		<div class="about__quadro-esquerda">
+			<img src="./assets/img/logistics.png">
+		</div>
+
+		<div class="about__quadro-direita">
+			
+			<h3 class="titulo-empresa">Chacal Service</h3>
+			<p class="descricao-sobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloribus nesciunt nihil saepe hic quod eligendi magni expedita dolorum dignissimos nulla error reprehenderit fugiat, soluta ipsum quisquam vel quidem in.</p>
+
+			<div class="quadro__cards">
+				<article class="quadro__card">
+					<span class="quadro__icon">
+						<i class="uil uil-trophy"></i>
+					</span>
+					<h4>Experiência</h4>
+					<p>6+ anos</p>
+				</article>
+
+				<article class="quadro__card">
+					<span class="quadro__icon">
+						<i class="uil uil-users-alt"></i>
+					</span>
+					<h4>Funcionários</h4>
+					<p>30+ colaboradores</p>
+				</article>
+
+				<article class="quadro__card">
+					<span class="quadro__icon">
+						<i class="uil uil-suitcase-alt"></i>
+					</span>
+					<h4>Clientes</h4>
+					<p>300+ Contratos</p>
+				</article>
+
+				<article class="quadro__card">
+					<span class="quadro__icon">
+						<i class="uil uil-map-marker-alt"></i>
+					</span>
+					<h4>Locais</h4>
+					<p>4 Postos trabalho</p>
+				</article>
+				<article class="quadro__card">
+					<span class="quadro__icon">
+						<i class="uil uil-chart-line"></i>
+					</span>
+					<h4>Especializações</h4>
+					<p>3+ areas atuação</p>
+				</article>
+				<article class="quadro__card">
+					<span class="quadro__icon">
+						<i class="uil uil-cloud-upload"></i>
+					</span>
+					<h4>Inovação</h4>
+					<p>Sempre expandindo</p>
+				</article>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section class="servicos" id="servicos">
+	<h2 class="titulo__secao">Our Services</h2>
+
+	<div class="servicos__container">
+		<article class="servico">
+			<div class="servico__head">
+				<h3>Agente de Portaria</h3>
+			</div>
+
+			<ul class="servico__lista">
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+			</ul>
+		</article>
+
+		<article class="servico">
+			<div class="servico__head">
+				<h3>Operador de Carga e Descarga</h3>
+			</div>
+
+			<ul class="servico__lista">
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+			</ul>
+		</article>
+
+		<article class="servico">
+			<div class="servico__head">
+				<h3>Limpeza e Conservação de Ambientes</h3>
+			</div>
+
+			<ul class="servico__lista">
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+				<li>
+					<i class="uil uil-check"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</li>
+			</ul>
+		</article>
+	</div>
+</section>
+
+
+<section class="perguntas" id="FAQ">
+	<h2 class="titulo__perguntas">FAQ - Principais dúvidas sobre o sistema</h2>
 	<div class="perg__container">
 		<article class="perg">
 			<div class="perg__icon"><i class="uil uil-plus"></i></div>
@@ -323,7 +503,6 @@
 		</article>
 	</div>
 </section>
-
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

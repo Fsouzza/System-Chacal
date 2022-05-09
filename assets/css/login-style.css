@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap');
 
+.fundo{
+	background-color: var(--cor-selecionado);
+}
 
 .tela-login{
-	background-color: var(--cor-fundo);
+	background-color: rgba(38,38,38,0.9);
 	width: 340px;
 	display: flex;
 	flex-direction: column;
@@ -42,7 +45,7 @@
     bottom: 1px;
     left: 0;
     border-radius: 25%;
-    background: var(--gradient-fundo);
+    background: var(--cor-selecionado);
 }
 
 
@@ -88,7 +91,7 @@
 
 
 button{
-    background-color:#4169E1;
+    background-color: var(--cor-azul);
     border: none;
     padding: 0.75rem;
     width: 98%;
@@ -99,7 +102,7 @@ button{
  }
 
 button:hover{
-	background-color: #006eff;
+	background-color: #1e80ff;
 	cursor: pointer;
 	transition: 0.7s;
 	transform: translate(1.2);
@@ -137,6 +140,11 @@ footer{
 	bottom: 8px;
 	width: 95%;
 	text-align: center;
+}
+
+footer a{
+	background-color: var(--cor-azul);
+	padding: .3rem;
 }
 
 

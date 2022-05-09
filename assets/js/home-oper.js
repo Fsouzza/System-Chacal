@@ -1,4 +1,5 @@
 const lista = document.querySelectorAll('.lista');
+const ancora = document.querySelectorAll('.cabecalho__lista--link');
 
 
 window.addEventListener('scroll', () => {
@@ -17,10 +18,21 @@ function ativarLink(){
 }
 
 
+lista.forEach((item) =>
+item.addEventListener('click', ativarLink));
 
 
-	lista.forEach((item) =>
-	item.addEventListener('click', ativarLink));
+
+function ativarAncora(){
+	
+	ancora.forEach((item) =>
+		item.classList.remove('ativo'));
+	this.classList.add('ativo');
+}
+
+
+ancora.forEach((item) =>
+item.addEventListener('click', ativarAncora));
 
 
 

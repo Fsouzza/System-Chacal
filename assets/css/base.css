@@ -2,8 +2,25 @@
 
 
 :root{
-	--gradient: linear-gradient(135deg,rgb(197, 54, 54),#a52232);
-	--cor-fundo: #3b3c42;
+	--background-sub-btn: rgb(46, 43, 42);
+	--fundo-card: #222222;
+	
+	--cor-menu: #1b1b1b;
+	--cor-fundo: #262626;
+	--cor-fundo-secund: #404040;
+
+	--cor-selecionado: #a52232;
+	--cor-hover: #151515;
+	--texto-vermelho: #94090D;
+	--cor-azul: #3958fc;
+
+	--plano-azul: #155266;
+	--plano-roxo: #7f2da0;
+	--plano-vermelho: #992727;
+	--plano-lilas: #381566;
+	--plano-verde: #156627;
+
+	
 	
 	--cor-sombra: rgba(0,0,0,0.7);
 	--sombra-tela: 5px 5px 10px rgba(0, 0, 0, 0.4);
@@ -23,11 +40,11 @@
 }
 
 body{
-
+	color: #fff;
 	align-items: center;
 	justify-content: center;
 	font-family: var(--fonte-principal);
-	background-color: var(--cor-fundo)
+	background-color: var(--cor-fundo);
 }
 
 

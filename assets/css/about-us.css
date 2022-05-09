@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
+
+.container{
+    box-sizing: border-box;
+}
+
+
+.about-us{
+    padding-left: 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    text-align: center;
+    margin: 6rem 1.5rem 2rem 4rem;
+    height: 100%;
+}
+
+.titulo__secao{
+    margin-bottom: 4rem;
+    padding: .26rem;
+    border-radius: 20%;
+    box-shadow: inset black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--cor-selecionado);
+    display: inline-block;
+}
+
+
+.about__quadro-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+}
+
+
+.about__quadro-esquerda{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about__quadro-esquerda img{
+    padding-top: 4rem;
+    height: 100%;
+    max-height: 600px;
+    max-width: 600px;
+    
+}
+
+
+.about__quadro-direita{
+    margin-right: 8rem;
+    padding-bottom: 4rem;
+}
+
+
+.titulo-empresa{
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    text-align: left;
+    line-height: 1.7;
+	font-weight: 600;
+    margin-top: 1rem;
+	font-size: 2rem;
+} 
+
+
+.descricao-sobre{
+    margin: 1.6rem 0 2.5rem;
+    align-items: center;
+    text-align: left;
+    font-weight: 300;
+	line-height: 1.5;
+	padding-bottom: 2rem;
+	font-size: 1rem;
+} 
+
+
+.quadro__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    align-items: center;
+    justify-content: start;
+}
+
+.quadro__card{
+    background: var(--fundo-card);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 210px;
+}
+
+.quadro__card:hover{
+    background: #313131;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.quadro__icon{
+    color: var(--cor-selecionado);
+    padding: .6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    font-size: 1.8em;
+    margin-bottom: .5rem;
+}
+
+
+.uil-check{
+    color: var(--texto-vermelho);
+}
+
+
+.quadro__card h4{
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.quadro__card p{
+    color: lightgray;
+    font-size: .75rem;
+}
+
+
+.servicos{
+    padding-top: 6rem;
+    padding-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 6rem 1.5rem 2rem 4rem;
+}
+
+
+.servicos__container{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.servico{
+    background-color: var(--fundo-card);
+    border-radius: 0 0 2rem 2rem;
+    border: 1.5px solid var(--cor-fundo-secund);
+    height: fit-content;
+}
+
+
+.servico:hover{
+    background: transparent;
+    border-color: var(--cor-menu);
+    cursor: default;
+}
+
+
+.servico__head{
+    background-color: var(--cor-selecionado);
+    padding: 1.8rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+
+.servico__head h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: lightgray;
+}
+
+
+.servico__lista{
+    padding: 3rem 1.1rem;
+}
+
+
+.servico__lista li{
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1.2rem;
+}
+
+
+.servico__lista p{
+    font-size: .9rem;
+    font-weight: 300;
+    color: lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 813px){
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 3rem .2rem;
+        height: 100%;
+    }
+
+    .titulo__secao{
+        font-size: 1.6rem;
+    }
+
+    .about__quadro-esquerda{
+        display: none;
+    }
+
+    .about__quadro-container{
+        display: flex;
+    }
+
+
+    .about__quadro-direita{
+        margin: 0 1rem;
+    }
+
+    .quadro__cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .75rem;
+        align-items: center;
+        justify-content: start;
+    }
+
+
+    .quadro__card{
+        background: #222222;
+        padding: 1.25rem;
+        border-radius: 1rem;
+        width: 100%;
+    }
+
+    .quadro__icon{
+        color: var(--cor-selecionado);
+        font-size: 1.5rem;
+        margin-bottom: .2rem;
+    }
+    
+    
+    
+    .quadro__card h4{
+        font-size: .96rem;
+        line-height: 1.5;
+    }
+    
+    .quadro__card p{
+        color: lightgray;
+        font-size: .7rem;
+    }
+
+
+    .servicos{
+        padding: 0;
+        margin: 1rem 1rem;
+    }
+    
+    
+    .servicos__container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    
+    .servico__head{
+        padding: 1.6rem;
+        border-radius: 0 0rem 1.5rem 1.5rem;
+    }
+    
+    
+    .servico__head h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: lightgray;
+    }
+    
+    
+    .servico__lista{
+        padding: 3rem 1rem 3rem 2rem;
+    }
+    
+    
+    .servico__lista li{
+        gap: .5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    
+    .servico__lista p{
+        text-align: left;
+        font-size: 1rem;
+    }
+
+
+}

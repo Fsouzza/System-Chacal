@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
 
 
-
 nav{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
@@ -11,16 +10,16 @@ nav{
 	align-items: flex-start;
 	min-height: 100vh;
 	position: fixed;
-	background-color: #a52232;
+	background-color: var(--cor-menu);
 	width: 60px;
-	box-shadow: 9px 0 0 #3b3c42;
+	box-shadow: 9px 0 0 var(--cor-fundo);
 	overflow: hidden;
 	transition: 0.9s;
-	z-index: 99;
+	z-index: 98;
 }
 
 nav:hover{
-	width: 200px;
+	width: 220px;
 }
 
 nav ul{
@@ -43,7 +42,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-	background-color: rgb(197, 54, 54);
+	background-color: var(--cor-hover);
 	transition: 0.4s;
 	letter-spacing: 0.02rem;
 }
@@ -87,7 +86,12 @@ nav ul li a .titulo{
 
 
 nav ul li.active{
-	background: #3b3c42;
+	background: var(--cor-fundo);
+}
+
+nav ul li.active a{
+	color: var(--cor-selecionado);
+	font-weight: bold;
 }
 
 nav ul li.active::before{
@@ -95,11 +99,11 @@ nav ul li.active::before{
 	content: '';
 	height: 30px;
 	width: 30px;
-	background: #a52232;
+	background: var(--cor-menu);
 	right: 0;
 	bottom: 100%;
 	border-bottom-right-radius: 8px;
-	box-shadow: 0 17px 0 #3b3c42;
+	box-shadow: 0 17px 0 var(--cor-fundo);
 }
 
 nav ul li.active::after{
@@ -107,11 +111,11 @@ nav ul li.active::after{
 	content: '';
 	height: 30px;
 	width: 30px;
-	background: #a52232;
+	background: var(--cor-menu);
 	right: 0;
 	top: 100%;
 	border-top-right-radius: 8px;
-	box-shadow: 0 -17px 0 #3b3c42;
+	box-shadow: 0 -17px 0 var(--cor-fundo);
 }
 
 
@@ -124,23 +128,8 @@ nav ul li.active::after{
 		display: flex;
 		position: absolute;
 		left: -100vw;
-		background: #3b3c42;
-		box-shadow: 9px 0 0 #a52232;
 	}
 	
-	nav ul li.active{
-		background: #a52232;
-	}
-
-	nav ul li.active::before{
-		background: #3b3c42;
-		box-shadow: 0 17px 0 #a52232;
-	}
-	
-	nav ul li.active::after{
-		background: #3b3c42;
-		box-shadow: 0 -17px 0 #a52232;
-	}
 	
 
 	nav:hover{
@@ -148,7 +137,7 @@ nav ul li.active::after{
 	}
 
 	.navegacao ul li:last-child a{
-	margin-top: 24rem;
+	margin-top: 20rem;
 	}
 
 	.navegacao--ativo{
@@ -159,7 +148,7 @@ nav ul li.active::after{
 	}
 
 	nav ul{
-		padding-top: 4.7rem;
+		padding-top: 5.5rem;
 		padding-left: 8px;
 	}
 
@@ -169,6 +158,6 @@ nav ul li.active::after{
 
 @media screen and (min-width: 900px){
 	nav ul li:last-child a{
-		margin-top: 465px;
+		margin-top: 30rem;
 	}
 }

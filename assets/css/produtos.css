@@ -64,6 +64,12 @@
 	transition: all 0.3s ease-in 0s;
 }
 
+.btn:focus{
+	background: #fff;
+	color: var(--cor-selecionado);
+	transition: all 0.3s ease-in 0s;
+}
+
 
 .categoria-direita{
 	padding-top: 3rem;
@@ -128,9 +134,19 @@
     transform: translateY(0);
 }
 
+.produtos:focus .informacao{
+    transform: translateY(0);
+}
+
 .produtos:hover{
 	box-shadow: 0 2.2rem 2.2rem rgba(0,0,0,0.3);
 }
+
+
+.produtos:focus{
+	box-shadow: 0 2.2rem 2.2rem rgba(0,0,0,0.3);
+}
+
 
 .informacao h3{
 	text-align: center;

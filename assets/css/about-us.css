@@ -97,6 +97,11 @@
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
 }
 
+.quadro__card:focus{
+    background: #313131;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+}
+
 .quadro__icon{
     color: var(--cor-selecionado);
     padding: .6rem;
@@ -157,6 +162,11 @@
     background: transparent;
     border-color: var(--cor-menu);
     cursor: default;
+}
+
+.servico:focus{
+    background: transparent;
+    border-color: var(--cor-menu);
 }
 
 

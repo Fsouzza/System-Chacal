@@ -109,6 +109,14 @@ button:hover{
 }
 
 
+button:focus{
+	background-color: #1e80ff;
+	cursor: pointer;
+	transition: 0.7s;
+	transform: translate(1.2);
+}
+
+
 span{
 	display: flex;
 	align-items: center;

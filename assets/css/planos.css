@@ -16,11 +16,13 @@
 
 .botao:hover{
     color: #fff;
+    outline: none;
 }
 
 
 .botao:focus{
     color: #fff;
+    outline: none;
 }
 
 

@@ -48,6 +48,13 @@ nav ul li:hover{
 }
 
 
+nav ul li:focus{
+	background-color: var(--cor-hover);
+	transition: 0.4s;
+	letter-spacing: 0.02rem;
+}
+
+
 nav ul li a{
 	position: relative;
 	display: flex;

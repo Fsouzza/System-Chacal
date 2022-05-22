@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html pt-br>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./assets/css/menu.css">
+	<link rel="stylesheet" href="./assets/css/cabecalho.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/rodape.css">
+	<link rel="stylesheet" href="./assets/css/contato.css">
+	<title>Contate-nos | Chacal Service</title>
+</head>
+
+<body>
+	
+	<header class="cabecalho">
+		<img src="./assets/img/logo-chacal.png" class="cabecalho__logo" alt="Imagem do logo da empresa">
+		<ul class="cabecalho__lista">
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html">Home</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#planos">Planos</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#FAQ">FAQ</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#endereco">Endereço</a></li>
+		</ul>
+		<a class="cta" href="#">Contato</a>
+		<button class="menu" aria-label="Menu"><i class="uil uil-bars"></i></button>
+		<button id= "open-apps" class="apps" aria-label="abrir menu flutuante"><i class="uil uil-angle-down"></i></button>
+		<button id="close-apps" aria-label="fechar menu flutuante"><i class="uil uil-angle-up"></i></button>
+
+	</header>
+
+	<div class="ul-mobile">
+		<ul class="mobile__lista">
+			<li class="mobile__item"><a class="mobile__lista--link" href="home.html">Home</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#planos">Planos</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#FAQ">FAQ</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="#endereco">Endereço</a></li>
+		</ul>
+
+		<a class="cta-mobile" href="#">Contato</a>
+	</div>
+
+	
+	<nav class="navegacao">
+		<ul>
+			<li class="lista">
+				<a href="#">
+					<span class="icone"><ion-icon name="person-outline"></ion-icon></span>
+					<span class="titulo">Operacional</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="#">
+					<span class="icone"><ion-icon name="card-outline"></ion-icon></span>
+					<span class="titulo">Financeiro</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="#">
+					<span class="icone"><ion-icon name="business-outline"></ion-icon></span>
+					<span class="titulo">Comercial</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="#">
+					<span class="icone"><ion-icon name="people-outline"></ion-icon></span>
+					<span class="titulo">RH</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="#">
+					<span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
+					<span class="titulo">Configurações</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="guia-sistema.html">
+					<span class="icone"><ion-icon name="help-circle-outline"></ion-icon></span>
+					<span class="titulo">Ajuda</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="index.html">
+					<span class="icone"><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class="titulo">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+<section class="contato">
+	<div class="container contato__cont">
+		<aside class="contato__aside">
+			<div class="aside__imagem">
+				<img class="imagem__contato" src="./assets/img/Contato.png" alt="">
+			</div>
+			<h2>Contate-nos</h2>
+			<span>Horario de funcionamento:</span>
+			<p>Seg - Qui - 07:00h às 17:00h</p>
+			<p id="p2">Sex - Sáb - 08:30h às 12:00h</p>
+
+			<ul class="contato__detalhes">
+				<li>
+					<i class="uil uil-mobile-android"></i>
+					<h5>+55 92 982250150</h5>
+				</li>
+				<li>
+					<i class="uil uil-envelope"></i>
+					<h5>comercial@chacalservice.com.br</h5>
+				</li>
+				<li>
+					<i class="uil uil-map-marker-alt"></i>
+					<h5>Manaus, Amazonas</h5>
+				</li>
+			</ul>
+
+			<ul class="contato__sociais">
+					<li><a href="https://wa.me/559282250150" target="_blank" title="whatsApp"><i class="uil uil-whatsapp"></i></a></li>
+					<li><a href="https://www.instagram.com/direct/new/" target="_blank" title="Msg instagram"><i class="uil uil-facebook-messenger-alt"></i></a></li>
+					<li><a href="https://www.instagram.com/chacalservice.am" target="_blank" title="instagram"><i class="uil uil-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/Chacalserviceam" target="_blank" title="facebook"><i class="uil uil-facebook"></i></a></li>
+			</ul>
+		</aside>
+
+
+		<form class="contato__form" action="https://formspree.io/f/xwkyyeqp" method="POST">
+			<div class="form__nome">
+				<label for="nome">Nome</label><br>
+				<input id="nome" type="text" name="Primeiro Nome" placeholder="Primeiro Nome" required><br>
+
+				<label for="sobrenome">Sobrenome</label><br>
+				<input id="sobrenome" type="text" name="Sobrenome" placeholder="Último Nome" required><br>
+			</div>
+
+			<div class="form__email">
+				<label for="email">E-mail</label><br>
+				<input id="email" type="email" name="Endereço de E-mail" placeholder="Seu endereço de e-mail" required>
+			</div>
+			<textarea name="Mensagem" id="mensagem" rows="8" required></textarea>
+			<button type="submit" class="btn">Enviar Mensagem</button>
+		</form>
+	</div>
+</section>
+
+
+<footer>
+	<div class="container rodape__container">
+		<div class="rodape__1">
+			<img class="rodape_logo" src="./assets/img/logo-chacal-c.png">
+			<h3>CHACAL SERVICE</h3>
+		</div>
+
+		<div class="rodape__2">
+			<h4>Permalinks</h4>
+			<ul class="permalinks">
+				<li class=""><a class="" href="home.html">Home</a></li>
+				<li class=""><a class="" href="#planos">Planos</a></li>
+				<li class=""><a class="" href="#FAQ">FAQ</a></li>
+				<li class=""><a class="" href="#endereco">Endereço</a></li>
+			</ul>
+		</div>
+
+		<div class="rodape__3">
+			<h4>Endereço</h4>
+			<ul class="endereco">
+				<li class="">Rua Hokkaido, 25 - Parque Dez</li>
+				<li class="">CEP: 69000-000</li>
+				<li class="">2 andar, sala C-4</li>
+			</ul>
+		</div>
+
+		<div class="rodape__4">
+			<h4>Contate-nos</h4>
+			<div>
+				<p>+55 92 9 8225-0006</p>
+				<p>comercial@chacalservice.com.br</p>
+			</div>
+
+			<ul class="rodape__midias-sociais">
+				<li><a href="https://www.instagram.com/chacalservice.am" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+				<li><a href="https://www.facebook.com/Chacalserviceam" target="_blank"><i class="uil uil-facebook"></i></a></li>
+				<li><a href="#"><i class="uil uil-twitter"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="rodape__copyright">
+		<small>Copyright &copy; Mr Yeagger</small>
+	</div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/home-oper.js"></script>
+
+</body>
+
+</html>

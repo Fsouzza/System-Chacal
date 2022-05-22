@@ -20,6 +20,12 @@
 	z-index: 97;
 }
 
+.cabecalho__logo{
+	margin-top: 0;
+	height: 60px;
+	width: 120px;
+}
+
 
 .window-scroll{
 	background-color: var(--cor-selecionado);
@@ -32,6 +38,11 @@
 	font-weight: 500;
 	font-size: 1.2rem;
 	border-bottom: 3px solid var(--cor-fundo);
+}
+
+
+.window-scroll .cabecalho__logo{
+	display: none;
 }
 
 
@@ -65,6 +76,12 @@
 }
 
 
+.cabecalho__lista--link:focus{
+	border-bottom: 4px solid var(--cor-selecionado);
+	font-weight: bold;
+}
+
+
 .cabecalho__lista--link.ativo{
 	color: var(--cor-selecionado);
 	font-weight: 500;
@@ -87,6 +104,11 @@
 }
 
 .cta:hover{
+	background-color: aliceblue;
+	color: var(--cor-selecionado);
+}
+
+.cta:focus{
 	background-color: aliceblue;
 	color: var(--cor-selecionado);
 }
@@ -166,6 +188,7 @@
 		transition-duration: 500ms;
 		
 	}
+
 
 	.apps-open{
 		right: 5px;

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/login-style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/base.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/menu.css">
+	<script type="text/javascript" src="../../server/jQuery/jquery.js"></script>
 </head>
 
 <body class="fundo">
@@ -16,9 +17,9 @@
 		<form class="tela-login">
 			<h1 id="login">Login</h1>
 
-			<input type="text" class="input input--icone input--user" id="username" placeholder="Username" maxlength="8" aria-label="Insira seu usuário" required>
+			<input type="text" class="input input--icone input--user place" id="username" title="Username" maxlength="8" aria-label="Insira seu usuário" required>
 		
-			<input type="password" class="input input--icone input--senha" id="senha" name="pass" placeholder="Password" maxlength="10" aria-label="Insira sua senha" required>
+			<input type="password" class="input input--icone input--senha place" id="senha" name="pass" title="password" maxlength="10" aria-label="Insira sua senha" required>
 	
 			<button type="submit" onclick="acessar(); return false">Entrar</button>
 			<span class="problemas--info">Forgot password? <a onclick="signup()" class="problemas--solution" id="sign-up" href=""> Sign Up</a></span>

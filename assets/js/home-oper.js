@@ -1,7 +1,9 @@
 const lista = document.querySelectorAll('.lista');
 const ancora = document.querySelectorAll('.cabecalho__lista--link');
+const ancoraMbl = document.querySelectorAll('.mobile__lista--link');
 
 
+/* SCROLL DO MOUSE - MENU FIXO */
 window.addEventListener('scroll', () => {
 	document.querySelector('header').classList.toggle
 	('window-scroll', window.scrollY > 0)
@@ -10,6 +12,7 @@ window.addEventListener('scroll', () => {
 
 
 
+/* MENU ATIVO MENU NAVBAR */
 function ativarLink(){
 	
 	lista.forEach((item) =>
@@ -17,12 +20,13 @@ function ativarLink(){
 	this.classList.add('active');
 }
 
-
 lista.forEach((item) =>
 item.addEventListener('click', ativarLink));
 
 
 
+
+/* MENU HEADER VERSION DESKTOP */
 function ativarAncora(){
 	
 	ancora.forEach((item) =>
@@ -30,14 +34,14 @@ function ativarAncora(){
 	this.classList.add('ativo');
 }
 
-
 ancora.forEach((item) =>
 item.addEventListener('click', ativarAncora));
 
 
 
 
-	const faqs = document.querySelectorAll('.perg');
+/* ICONE HIDE E SHOW CAIXA DE PERGUNTAS */
+const faqs = document.querySelectorAll('.perg');
 
 faqs.forEach(perg => {
 	perg.addEventListener('click', () => {
@@ -55,6 +59,8 @@ faqs.forEach(perg => {
 })
 
 
+
+/* funcao menu mobile navbar */
 const btnMenu = document.querySelector('.menu')
 const navBar = document.querySelector('.navegacao')
 
@@ -64,7 +70,7 @@ btnMenu.addEventListener('click', () => {
 
 
 
-
+/* ALTERACAO ICON DO HEADER MOBILE OPEN E CLOSE */
 const btnPlus = document.querySelector('#open-apps');
 const menu2 = document.querySelector('.ul-mobile');
 const btnClose = document.querySelector('#close-apps');
@@ -84,3 +90,18 @@ const closeMenu2 = () => {
 }
 
 btnClose.addEventListener('click', closeMenu2);
+
+
+
+
+
+/* MENU HEADER VERSION MOBILE - ITEM SELECIONADO */
+function ativarAncora2(){
+	
+	ancoraMbl.forEach((item) =>
+		item.classList.remove('ativo'));
+	this.classList.add('ativo');
+}
+
+ancoraMbl.forEach((item) =>
+item.addEventListener('click', ativarAncora2));

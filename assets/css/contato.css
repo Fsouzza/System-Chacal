@@ -23,15 +23,16 @@
     box-sizing: border-box;
     position:relative;
     top: -8rem;
-    background: var(--cor-fundo-secund);
+    background: var(--cor-selecionado);
     padding: 4rem;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     margin-left: 0;
 }
 
 
 .imagem__contato{
-    width: 300px;
+    width: 18rem;
+    max-width: 400px;
     margin-bottom: 2.2rem;
 }
 
@@ -82,10 +83,10 @@
 
 .contato__sociais a{
     background: var(--cor-fundo);
-    color: rgb(59, 85, 141);;
+    color: var(--cor-azul);
     padding: .7rem;
     border-radius: 50%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transform: all 0.3s ease-in 0s;
 }
 
@@ -93,7 +94,7 @@
 
 .contato__sociais a:hover, .contato__sociais a:focus{
     outline: none;
-    color: var(--cor-selecionado);
+    color: #fff;
 }
 
 
@@ -154,13 +155,14 @@ label{
     cursor: pointer;
 	text-decoration: none;
 	box-sizing: border-box;
-	background-color: rgb(59, 85, 141);
+	background-color: var(--cor-azul);
 	color: #fff;
 	padding: 1.15rem 2rem;
 	margin-bottom: 2rem;
     font-size: 1rem;
 	font-weight: 500;
     border: none;
+    justify-content: center;
 }
 
 
@@ -179,6 +181,11 @@ label{
 }
 
 
+.icon-send{
+    font-size: 1.3rem;
+}
+
+
 
 @media screen and (max-width: 1024px){
     .contato{
@@ -194,6 +201,7 @@ label{
     }
 
     .contato__aside{
+        box-sizing: border-box;
         width: auto;
         padding: 1.5rem;
         bottom: 0;
@@ -229,14 +237,18 @@ label{
         top: 0;
     }
 
+    .imagem__contato{
+        display: flex;
+        object-fit: cover;
+        padding-bottom: 1rem;
+        margin: auto;
+    }
 
 
     .contato__form{
         align-self: center;
         margin: 0 2rem 1.5rem 2rem;
     }
-
-
 
     .form__nome{
         flex-direction: column;
@@ -250,13 +262,9 @@ label{
         width: 100%;
     }
 
-    .imagem__contato{
-        width: 94%;
-        margin-bottom: 2.2rem;
-    }
 
     .contato__sociais{
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     .btn{
@@ -266,5 +274,13 @@ label{
 
     .contato__aside span, p{
         display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 450px){
+    .contato__sociais{
+        justify-content: space-around;
     }
 }

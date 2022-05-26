@@ -182,7 +182,7 @@
 		margin-bottom: 1.26rem;
 		position: absolute;
 		top: -150vh;
-		background-color: var(--cor-menu);
+		background-color: var(--cor-selecionado);
 		text-transform: uppercase;
 		transition-timing-function: ease-in-out;
 		transition-duration: 500ms;
@@ -193,7 +193,7 @@
 	.apps-open{
 		right: 5px;
 		width: 55vw;
-		top: 4.66rem;
+		top: 4.78rem;
 		z-index: 2;
 		position: fixed;
 	}
@@ -202,11 +202,12 @@
 	.mobile__item{
 		width: 55vw;
 		padding: .56rem;
-		border-top: 1.5px solid var(--cor-selecionado);
+		border: 1.5px solid var(--cor-fundo);
 	}
 	
 	.mobile__lista--link.ativo{
-		color: #c93939;
+		color: var(--cor-menu);
+		width: 100%;
 		font-weight: bold;
 		font-size: 1rem;
 	
@@ -216,7 +217,7 @@
 	.cta-mobile{
 		padding: .58rem;
 		background-color: transparent;
-		border-top: 1.5px solid #c93939;
+		border: 1.5px solid var(--cor-fundo);
 		list-style: none;
 		text-decoration: none;
 	}

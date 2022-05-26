@@ -151,7 +151,7 @@ footer{
 }
 
 footer a{
-	background-color: var(--cor-azul);
+	background-color: rgb(59, 85, 141);
 	padding: .3rem;
 }
 

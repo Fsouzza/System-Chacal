@@ -42,7 +42,7 @@ function semAcesso(){
 function ativarAncora(){
 	
 	ancora.forEach((item) =>
-		item.classList.remove('ativo'));
+	item.classList.remove('ativo'));
 	this.classList.add('ativo');
 }
 
@@ -111,8 +111,9 @@ btnClose.addEventListener('click', closeMenu2);
 function ativarAncora2(){
 	
 	ancoraMbl.forEach((item) =>
-		item.classList.remove('ativo'));
+	item.classList.remove('ativo'));
 	this.classList.add('ativo');
+	closeMenu2();
 }
 
 ancoraMbl.forEach((item) =>

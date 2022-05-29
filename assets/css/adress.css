@@ -2,28 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
 
 .modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0,.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 999;
+}
+
+.dialog-modal{
     font-family: 'Montserrat', sans-serif;
 	color: #fff;
-	background-color: var(--cor-fundo);
+	background-color: var(--cor-fundo-secund);
     text-align: center;
     justify-content: center;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999;
     padding: 2rem 1rem 2rem 1rem;
-    border-radius: 2rem;
-    display: none;
+    border-radius: .5rem;
+}
+
+.btn-compartilhar, .btn-fechar{
+    display: inline-block;
+    font-size: 1.25rem;
+    width: fit-content;
+}
+
+
+.btn-fechar{
+    background-color: var(--cor-selecionado);
 }
 
 .btn-compartilhar{
-    display: inline-block;
+    background-color: rgb(59, 85, 141);
 }
 
-.btn-fechar{
-    display: inline-block;
-}
 
 
 .modal{
@@ -34,9 +51,25 @@
 
 .modal h2{
     margin: 1rem auto;
+    font-weight: 600;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+    font-style: normal;
+}
+
+
+.modal p{
+    font-style: normal;
+}
+
+
+.modal iframe{
+    height: 200px;
+    width: 400px;
 }
 
 .botoes{
+    display: flex;
     justify-content: space-around;
     margin-top: 1rem;
 }
@@ -66,6 +99,10 @@
 
 .p2{
     margin-bottom: 2rem;
+}
+
+.dialog-overlay{
+    display: none;
 }
 
 

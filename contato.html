@@ -18,10 +18,10 @@
 	<header class="cabecalho">
 		<img src="./assets/img/logo-chacal.png" class="cabecalho__logo" alt="Imagem do logo da empresa">
 		<ul class="cabecalho__lista">
-			<li class="cabecalho__item"><a class="cabecalho__lista--link ativo" href="home.html">Home</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html">Home</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#planos">Planos</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#FAQ">FAQ</a></li>
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" id="endereco" onclick="openModal()">Endereço</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link btnEndereco" onclick="openModal()">Endereço</a></li>
 		</ul>
 		<a class="cta" href="contato.html">Contato</a>
 		<button class="menu" aria-label="Menu"><i class="uil uil-bars"></i></button>
@@ -35,7 +35,7 @@
 			<li class="mobile__item"><a class="mobile__lista--link" href="home.html">Home</a></li>
 			<li class="mobile__item"><a class="mobile__lista--link" href="#planos">Planos</a></li>
 			<li class="mobile__item"><a class="mobile__lista--link" href="#FAQ">FAQ</a></li>
-			<li class="mobile__item"><a class="mobile__lista--link" id="endereco" onclick="openModal()"">Endereço</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link btnEndereco" onclick="openModal()">Endereço</a></li>
 		</ul>
 
 		<a class="cta-mobile" href="contato.html">Contato</a>
@@ -44,8 +44,8 @@
 	
 	<nav class="navegacao">
 		<ul>
-			<li class="lista active">
-				<a href="#">
+			<li class="lista">
+				<a href="home.html">
 					<span class="icone"><ion-icon name="person-outline"></ion-icon></span>
 					<span class="titulo">Operacional</span>
 				</a>
@@ -149,6 +149,24 @@
 		</form>
 	</div>
 </section>
+
+<div class="modal-container" id="endereco" role="dialog" aria-labelledby="tituloDialog">
+	<div class="dialog-modal">
+		<address class="modal">
+			<h2>Chacal Service</h2>
+			<p>Rua Hokkaido, 25 - SALA C-4</p>
+			<p>Bairro Parque Dez de Novembro</p>
+			<p class="p2">Manaus-AM, 69054-664</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63745.09743629232!2d-60.0596202!3d-3.0763588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b205d47f7ff%3A0xbcabf83c1cf40c67!2sCHACAL%20SERVICE!5e0!3m2!1spt-BR!2sbr!4v1653787280202!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>	
+		</address>
+
+		<div class="botoes">
+			<button class="cta btn-compartilhar"><i class="uil uil-share"></i></button>
+			<button class="cta btn-fechar" onclick="closeModal()" aria-label="Fechar janela modal"><i class="uil uil-multiply"></i></button>
+		</div>
+		<div class="dialog-overlay"></div>
+	</div>
+</div>
 
 
 <footer>

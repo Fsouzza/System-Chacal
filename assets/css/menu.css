@@ -129,7 +129,7 @@ nav ul li.active::after{
 
 /*  ------------------ MOBILE VERSION ----------------- */
 
-@media screen and (max-width: 813px){
+@media screen and (max-width: 990px){
 
 	.navegacao{
 		display: flex;
@@ -144,7 +144,7 @@ nav ul li.active::after{
 	}
 
 	.navegacao ul li:last-child a{
-	margin-top: 20rem;
+	margin-top: 21rem;
 	}
 
 	.navegacao--ativo{
@@ -163,8 +163,8 @@ nav ul li.active::after{
 
 
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 991px){
 	nav ul li:last-child a{
-		margin-top: 30rem;
+		margin-top: 34rem;
 	}
 }

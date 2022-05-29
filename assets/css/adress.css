@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
+
+.modal-container{
+    font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	background-color: var(--cor-fundo);
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding: 2rem 1rem 2rem 1rem;
+    border-radius: 2rem;
+    display: none;
+}
+
+.btn-compartilhar{
+    display: inline-block;
+}
+
+.btn-fechar{
+    display: inline-block;
+}
+
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.modal h2{
+    margin: 1rem auto;
+}
+
+.botoes{
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+
+.show{
+    display: block;
+}
+
+
+.show .modal{
+    animation: modal .4s;
+}
+
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.p2{
+    margin-bottom: 2rem;
+}
+
+
+
+

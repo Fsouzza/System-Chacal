@@ -10,6 +10,7 @@
 	width: 100%;
 }
 
+
 .perg__container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -48,6 +49,7 @@
 }
 
 .perg__icon{
+	margin-top: .2rem;
 	align-self: flex-start;
 	font-size: 1.2rem;
 }
@@ -72,45 +74,65 @@
 
 
 
-@media screen and (max-width: 812px){
+@media screen and (max-width: 990px){
     .perguntas{
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		width: 100%;
-		height: 100%;
-		padding-bottom: 4rem;
+		padding: 4rem 1rem 4rem 1rem;
 	}
+
+
+	.perg__container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0;
+	}
+
 
 	.titulo__perguntas{
 		margin: 0;
 		text-align: center;
-		font-size: 1rem;
+		font-size: 1.3rem;
 		line-height: 5;
 	}
 
-	.perg__container{
-		width: 100vw;
-		display: flex;
-		margin: auto;
-		flex-direction: column;
-	}
 
 	.perg{
-		margin-right: .75rem;
-		margin-left: .75rem;
-		width: 94%;
 		display: flex;
 		padding: .5rem;
 		align-items: flex-start;
 	}
 
-
 	.perg.open p{
 		text-align: start;
-		font-size: 0.7rem;
+		font-size: 0.9rem;
 		margin-top: 1rem;
 		margin-right: 0;
 		font-weight: 300;
+	}
+}
+
+
+
+@media screen and (max-width: 700px) {
+	.perg__container{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0;
+	}
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1400px){
+	.perg__container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+		margin: 1rem 0 0 6rem;
+	}
+
+	.perguntas{
+		padding: 4rem 1rem 4rem 1rem;
 	}
 }

@@ -187,44 +187,20 @@ label{
 
 
 
-@media screen and (max-width: 1024px){
-    .contato{
-        padding-bottom: 0;
-        height: 100%;
-    }
-
-    .contato__cont{
-        gap: 1.5rem;
-        margin-top: 3rem;
-        height: auto;
-        padding: 1.5rem;
-    }
-
-    .contato__aside{
-        box-sizing: border-box;
-        width: auto;
-        padding: 1.5rem;
-        bottom: 0;
-    }
-
-    .contato__form{
-        align-self: center;
-        margin-right: 1.5rem;
-    }
-}
 
 
 
 
-@media screen and (max-width: 813px){
+
+@media screen and (max-width: 650px){
 
     .contato{
-        min-height: 100%;
-        top: 5.5rem;
+        height: 100vh;
+        top: 0;
     }
     
     .contato__cont{
-        top: 6rem;
+        top: 5rem;
         grid-template-columns: 1fr;
         gap: 3rem;
         margin-top: 0;
@@ -233,8 +209,11 @@ label{
     }
 
     .contato__aside{
-        width: auto;
         top: 0;
+        padding: 2rem;
+        border-radius: .5rem .5rem 2rem 2rem;
+        margin-left: 0;
+        width: auto;
     }
 
     .imagem__contato{
@@ -278,9 +257,92 @@ label{
 
 }
 
+@media screen and (min-width: 651px) and (max-width: 990px){
+    .contato{
+        min-height: 100vh;
+        
+    }
+    
+    .contato__cont{
+        top: 8rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 0;
+        padding: 0 1rem 2rem 0;
+        width: 98vw;
+        margin-bottom: 2rem;
+        height: 70.5%;
+    }
 
-@media screen and (max-width: 450px){
+    .contato__aside{
+        top: 0;
+        padding: 2rem;
+        border-radius: .5rem 2rem 2rem .5rem;
+    }
+
+    .imagem__contato{
+        display: flex;
+        object-fit: cover;
+        padding-bottom: 1rem;
+        margin: auto;
+    }
+
+
+    .contato__form{
+        align-self: center;
+        margin: 0 1rem 2rem 0;
+    }
+
+    .form__nome{
+        flex-direction: column;
+    }
+
+    .form__email{
+        flex-direction: column;
+    }
+
+    .form__nome input[type="text"]{
+        width: 100%;
+    }
+
+
     .contato__sociais{
-        justify-content: space-around;
+        justify-content: flex-start;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contato__aside span, p{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1400px){
+    .contato{
+        min-height: 100%;
+        margin-bottom: 4rem;
+        
+    }
+
+    .contato__cont{
+        top: 16rem;
+        margin: 0 1rem 1rem 6rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        width: auto;
+    }
+
+    .contato__form{
+        padding-top: 1rem;
+        gap: 1rem;
+        margin-right: 4rem; 
+    }
+
+    .contato__aside{
+        padding: 2rem;
     }
 }

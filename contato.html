@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="./assets/css/base.css">
 	<link rel="stylesheet" href="./assets/css/rodape.css">
 	<link rel="stylesheet" href="./assets/css/contato.css">
-	<title>Contate-nos | Chacal Service</title>
+	<link rel="stylesheet" href="./assets/css/adress.css">
+	<title>Chacal Service | Entre em contato</title>
 </head>
 
 <body>
@@ -17,12 +18,12 @@
 	<header class="cabecalho">
 		<img src="./assets/img/logo-chacal.png" class="cabecalho__logo" alt="Imagem do logo da empresa">
 		<ul class="cabecalho__lista">
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html">Home</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link ativo" href="home.html">Home</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#planos">Planos</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#FAQ">FAQ</a></li>
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#endereco">Endereço</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" id="endereco" onclick="openModal()">Endereço</a></li>
 		</ul>
-		<a class="cta" href="#">Contato</a>
+		<a class="cta" href="contato.html">Contato</a>
 		<button class="menu" aria-label="Menu"><i class="uil uil-bars"></i></button>
 		<button id= "open-apps" class="apps" aria-label="abrir menu flutuante"><i class="uil uil-angle-down"></i></button>
 		<button id="close-apps" aria-label="fechar menu flutuante"><i class="uil uil-angle-up"></i></button>
@@ -34,42 +35,42 @@
 			<li class="mobile__item"><a class="mobile__lista--link" href="home.html">Home</a></li>
 			<li class="mobile__item"><a class="mobile__lista--link" href="#planos">Planos</a></li>
 			<li class="mobile__item"><a class="mobile__lista--link" href="#FAQ">FAQ</a></li>
-			<li class="mobile__item"><a class="mobile__lista--link" href="#endereco">Endereço</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" id="endereco" onclick="openModal()"">Endereço</a></li>
 		</ul>
 
-		<a class="cta-mobile" href="#">Contato</a>
+		<a class="cta-mobile" href="contato.html">Contato</a>
 	</div>
 
 	
 	<nav class="navegacao">
 		<ul>
-			<li class="lista">
-				<a href="home.html">
+			<li class="lista active">
+				<a href="#">
 					<span class="icone"><ion-icon name="person-outline"></ion-icon></span>
 					<span class="titulo">Operacional</span>
 				</a>
 			</li>
 			<li class="lista">
-				<a href="#">
+				<a href="#" onclick="semAcesso()">
 					<span class="icone"><ion-icon name="card-outline"></ion-icon></span>
 					<span class="titulo">Financeiro</span>
 				</a>
 			</li>
 			<li class="lista">
-				<a href="#">
+				<a href="#" onclick="semAcesso()">
 					<span class="icone"><ion-icon name="business-outline"></ion-icon></span>
 					<span class="titulo">Comercial</span>
 				</a>
 			</li>
-			<li class="lista">
+			<li class="lista" onclick="semAcesso()">
 				<a href="#">
 					<span class="icone"><ion-icon name="people-outline"></ion-icon></span>
 					<span class="titulo">RH</span>
 				</a>
 			</li>
-			<li class="lista">
+			<li class="lista" onclick="semAcesso()">
 				<a href="#">
-					<span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
+					<span class="icone" id="acesso"><ion-icon name="settings-outline"></ion-icon></span>
 					<span class="titulo">Configurações</span>
 				</a>
 			</li>
@@ -95,24 +96,31 @@
 				<img class="imagem__contato" src="./assets/img/Contato.png" alt="">
 			</figure>
 			<h2>Contate-nos</h2>
-			<span>Horario de funcionamento:</span>
-			<p>Seg - Qui - 07:00h às 17:00h</p>
-			<p id="p2">Sex - Sáb - 08:30h às 12:00h</p>
 
-			<ul class="contato__detalhes">
-				<li>
-					<i class="uil uil-mobile-android"></i>
-					<h5>+55 92 982250150</h5>
-				</li>
-				<li>
-					<i class="uil uil-envelope"></i>
-					<h5>comercial@chacalservice.com.br</h5>
-				</li>
-				<li>
-					<i class="uil uil-map-marker-alt"></i>
-					<h5>Manaus, Amazonas</h5>
-				</li>
-			</ul>
+			<div class="mobile-contatc">
+				<div>
+					<span>Horario de funcionamento:</span>
+					<p>Seg - Qui - 07:00h às 17:00h</p>
+					<p id="p2">Sex - Sáb - 08:30h às 12:00h</p>
+				</div>
+
+				<div>
+					<ul class="contato__detalhes">
+						<li>
+							<i class="uil uil-mobile-android"></i>
+							<h5>+55 92 982250150</h5>
+						</li>
+						<li>
+							<i class="uil uil-envelope"></i>
+							<h5>comercial@chacalservice.com.br</h5>
+						</li>
+						<li>
+							<i class="uil uil-map-marker-alt"></i>
+							<h5>Manaus, Amazonas</h5>
+						</li>
+					</ul>
+				</div>
+			</div>
 
 			<ul class="contato__sociais">
 					<li><a href="https://wa.me/559282250150" target="_blank" title="whatsApp"><i class="uil uil-whatsapp"></i></a></li>
@@ -192,6 +200,7 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="./assets/js/home-oper.js"></script>
+<script src="./assets/js/adress.js"></script>
 
 </body>
 

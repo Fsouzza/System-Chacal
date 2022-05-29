@@ -16,12 +16,24 @@ window.addEventListener('scroll', () => {
 function ativarLink(){
 	
 	lista.forEach((item) =>
-		item.classList.remove('active'));
+	item.classList.remove('active'));
 	this.classList.add('active');
 }
 
 lista.forEach((item) =>
 item.addEventListener('click', ativarLink));
+
+
+
+/* ALERT PARA LINKS SEM ACESSO */
+function semAcesso(){
+	Swal.fire({
+		icon: 'warning',
+		title: 'Atenção!',
+		text: 'Você não possui acesso a este campo',
+	  })
+
+}
 
 
 

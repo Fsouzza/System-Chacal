@@ -130,7 +130,7 @@
 
 /*  ------------------ MOBILE VERSION ----------------- */
 
-@media screen and (max-width: 813px){
+@media screen and (max-width: 990px){
 
 
 
@@ -173,6 +173,7 @@
 
 	.ul-mobile{
 		font-family: 'Poppins', sans-serif;
+		max-width: 400px;
 		font-weight: 500;
 		font-size: .86rem;
 		color: #edf0f1;
@@ -193,14 +194,14 @@
 	.apps-open{
 		right: 5px;
 		width: 55vw;
-		top: 4.78rem;
+		top: 4.77rem;
 		z-index: 2;
 		position: fixed;
 	}
 	
 	
 	.mobile__item{
-		width: 55vw;
+		
 		padding: .56rem;
 		border: 1.5px solid var(--cor-fundo);
 	}
@@ -221,5 +222,13 @@
 		list-style: none;
 		text-decoration: none;
 	}
-	
+}
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1400px){
+	.cabecalho__logo{
+		margin-right: auto;
+		margin-left: 3rem;
+	}
 }

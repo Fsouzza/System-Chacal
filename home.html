@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="./assets/css/planos.css">
 	<link rel="stylesheet" href="./assets/css/base.css">
 	<link rel="stylesheet" href="./assets/css/rodape.css">
-	<title>Home | Operacional</title>
+	<link rel="stylesheet" href="./assets/css/adress.css">
+	<title>Chacal Service | Home</title>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 			<li class="cabecalho__item"><a class="cabecalho__lista--link ativo" href="home.html">Home</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#planos">Planos</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#FAQ">FAQ</a></li>
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#endereco">Endereço</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link btnEndereco" onclick="openModal()">Endereço</a></li>
 		</ul>
 		<a class="cta" href="contato.html">Contato</a>
 		<button class="menu" aria-label="Menu"><i class="uil uil-bars"></i></button>
@@ -37,7 +38,7 @@
 			<li class="mobile__item"><a class="mobile__lista--link" href="home.html">Home</a></li>
 			<li class="mobile__item"><a class="mobile__lista--link" href="#planos">Planos</a></li>
 			<li class="mobile__item"><a class="mobile__lista--link" href="#FAQ">FAQ</a></li>
-			<li class="mobile__item"><a class="mobile__lista--link" href="#endereco">Endereço</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link btnEndereco" onclick="openModal()">Endereço</a></li>
 		</ul>
 
 		<a class="cta-mobile" href="contato.html">Contato</a>
@@ -52,32 +53,32 @@
 					<span class="titulo">Operacional</span>
 				</a>
 			</li>
-			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
-				<a href="#">
+			<li class="lista">
+				<a href="#" onclick="semAcesso()">
 					<span class="icone"><ion-icon name="card-outline"></ion-icon></span>
 					<span class="titulo">Financeiro</span>
 				</a>
 			</li>
-			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
-				<a href="#">
+			<li class="lista">
+				<a href="#" onclick="semAcesso()">
 					<span class="icone"><ion-icon name="business-outline"></ion-icon></span>
 					<span class="titulo">Comercial</span>
 				</a>
 			</li>
-			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
+			<li class="lista" onclick="semAcesso()">
 				<a href="#">
 					<span class="icone"><ion-icon name="people-outline"></ion-icon></span>
 					<span class="titulo">RH</span>
 				</a>
 			</li>
-			<li class="lista" onclick="alert('Você não possui permissão de acesso!')">
+			<li class="lista" onclick="semAcesso()">
 				<a href="#">
-					<span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
+					<span class="icone" id="acesso"><ion-icon name="settings-outline"></ion-icon></span>
 					<span class="titulo">Configurações</span>
 				</a>
 			</li>
-			<li class="lista">
-				<a href="guia-sistema.html">
+			<li class="lista" onclick="semAcesso()">
+				<a href="#">
 					<span class="icone"><ion-icon name="help-circle-outline"></ion-icon></span>
 					<span class="titulo">Ajuda</span>
 				</a>
@@ -389,14 +390,6 @@
 					<i class="uil uil-check"></i>
 					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
 				</li>
-				<li>
-					<i class="uil uil-check"></i>
-					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-				</li>
-				<li>
-					<i class="uil uil-check"></i>
-					<p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-				</li>
 			</ul>
 		</article>
 
@@ -505,6 +498,23 @@
 	</div>
 </section>
 
+
+<div class="modal-container" id="endereco">
+	<address class="modal">
+		<h2>Endereço Chacal Service</h2>
+		<p>Rua Hokkaido, 25 - SALA C-4</p>
+		<p class="p2">Bairro Parque Dez de Novembro, Manaus - AM, 69054-664</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63745.09743629232!2d-60.0596202!3d-3.0763588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b205d47f7ff%3A0xbcabf83c1cf40c67!2sCHACAL%20SERVICE!5e0!3m2!1spt-BR!2sbr!4v1653787280202!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+	</address>
+
+	<div class="botoes">
+		<button class="cta btn-compartilhar">Share</button>
+		<button class="cta btn-fechar" onclick="closeModal()">fechar</button>
+		
+	</div>
+</div>
+
+
 <footer>
 	<div class="container rodape__container">
 		<div class="rodape__1">
@@ -554,6 +564,8 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="./assets/js/home-oper.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./assets/js/adress.js"></script>
 
 </body>
 

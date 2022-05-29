@@ -61,7 +61,7 @@ footer ul li a:focus{
 
 
 
-@media screen and (max-width: 813px){
+@media screen and (max-width: 800px){
     footer{
         display: flex;
         flex-direction: column;
@@ -90,4 +90,29 @@ footer ul li a:focus{
         margin-top: 2rem;
     }
     
+}
+
+
+@media screen and (max-width: 990px){
+    footer{
+        margin-top: 6rem;
+        padding-top: 6rem;
+    }
+
+
+    .rodape__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+    .rodape__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding-left: 7.5rem;
+    }
 }

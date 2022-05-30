@@ -25,9 +25,11 @@
 	--cor-sombra: rgba(0,0,0,0.7);
 	--sombra-tela: 5px 5px 10px rgba(0, 0, 0, 0.4);
 
-	--fonte-principal: font-family: 'Montserrat', sans-serif;
+	--fonte-principal: 'Montserrat', sans-serif;
 
 	--branco: white;
+
+
 }
 
 

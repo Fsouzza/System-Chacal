@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/login-style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/base.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/menu.css">
-	<script type="text/javascript" src="./assets/js/jquery.js"></script>
 </head>
 
 <body class="fundo">
@@ -17,13 +16,18 @@
 		<form class="tela-login">
 			<h1 id="login">Login</h1>
 
-			<input type="text" class="input input--icone input--user place" id="username" title="Username" maxlength="8" aria-label="Insira seu usuário" required>
-		
-			<input type="password" class="input input--icone input--senha place" id="senha" name="pass" title="password" maxlength="10" aria-label="Insira sua senha" required>
-	
+			<div class="input-container">
+				<input type="text" class="input input--icone input--user place" id="username" placeholder="@username" pattern="^(@.{4,10})$" title="Insira seu login com o '@' mais o username cadastrado" data-tipo="nome" required>
+				<span class="input-mensagem-erro">Este campo não está válido</span>
+			</div>
+
+			<div class="input-container ">
+				<input type="password" class="input input--icone input--senha place" id="senha" placeholder="*********" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,10}$" aria-label="Insira sua senha" title="A senha deve ter no entre 6 a 10 caracteres, uma letra maíuscula e um caractere especial" data-tipo="senha" required>
+				<span class="input-mensagem-erro">Este campo não está válido</span>
+			</div>
+
 			<button type="submit" onclick="acessar(); return false">Entrar</button>
 			<span class="problemas--info">Forgot password? <a onclick="signup()" class="problemas--solution" id="sign-up" href=""> Sign Up</a></span>
-
 		</form>
 	</main>
 
@@ -32,6 +36,8 @@
 	</footer>
 
 	<script src="assets/js/js-login.js"></script>
+	<script src="assets/js/app.js" type="module"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

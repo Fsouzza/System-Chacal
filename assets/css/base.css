@@ -8,6 +8,7 @@
 	--cor-menu: #1b1b1b;
 	--cor-fundo: #262626;
 	--cor-fundo-secund: #404040;
+	--cor-fundo-terc: #807e7e;
 
 	--cor-selecionado: #a52232;
 	--cor-hover: #151515;
@@ -24,10 +25,11 @@
 	
 	--cor-sombra: rgba(0,0,0,0.7);
 	--sombra-tela: 5px 5px 10px rgba(0, 0, 0, 0.4);
+	--sombra-neon: 4px 4px 16px rgba(33, 59, 177, 0.144);
 
 	--fonte-principal: 'Montserrat', sans-serif;
 
-	--branco: white;
+	--branco: #fff;
 
 
 }

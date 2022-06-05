@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
+
+body{
+    min-width: 100vw;
+}
+
+fieldset{
+    border: none;
+}
+
+
+.container{
+    background-color: var(--cor-menu);
+    border-radius: 8px;
+    box-shadow: var(--sombra-neon);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 900px;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 1rem;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* FORM */
+.container form{
+    position: relative;
+    margin-top: 1rem;
+    min-height: 667px;
+}
+
+#secundaria, #secundaria2, #btn2{
+    display: none;
+}
+
+
+.container form .detalhes{
+    margin-top: .9rem;
+}
+
+.container form .titulo{
+    display: block;
+    font-size: 1.12rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem 0;
+}
+
+.container #registro{
+    font-size: 1.5rem;
+    font-weight: 600;
+	align-self: flex-start;
+    margin-top: 1rem;
+	margin-bottom: 0;
+    position: relative;
+}
+
+#registro:before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 4.2px;
+    width: 42px;
+    background-color: var(--cor-selecionado);
+    border-radius: 30%;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - .6rem);
+    flex-direction: column;
+    margin: .2rem 0;
+    height: 100px;
+}
+
+
+
+
+/* INPUTS FORM */
+.input-field label{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.input-field input, select{
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: .4rem 0;
+    padding: 0 1rem;
+    outline: none;
+    border: 1px solid #aaa;
+    background-color: rgb(206, 206, 206);
+    border-radius: 4px;
+}
+
+.input-field input:focus{
+    border: 3px solid var(--cor-fundo-secund);
+    border-radius: 4px;
+}
+
+select{
+    color:#707070;
+}
+
+.input-field input:is(:focus, :hover){
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field input[type="date"]{
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.input-container--invalido {
+    margin-bottom: 0;
+}
+
+.input-container--invalido input {
+    border: 4px solid var(--texto-vermelho);
+    border-radius: 7px;
+}
+
+.input-container--invalido input {
+    color: var(--cor-selecionado);
+    font-weight: 500;
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: rgb(255, 55, 55);
+    display: block;
+    margin-top: 0;
+    padding-left: 0.5rem;
+    font-size: .8rem;
+}
+
+
+
+/* BOTOES */
+.container form .btn{
+    font-family: var(--fonte-principal);
+    border: none;
+    outline: none;
+    padding: .6rem;
+    height: 45px;
+    margin: 0;
+    max-width: 260px;
+    min-width: 160px;
+    cursor: pointer;
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--cor-azul);
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+}
+
+
+form .btn:hover, form .btn:focus {
+    background-color: rgb(206, 206, 206);
+    color: var(--cor-selecionado);
+}
+
+.container form .btn-princ{
+    margin: 1.5rem .5rem 1rem 0;
+
+}
+
+
+
+/* ESTILIZAÇÕES GERAIS */
+form button i{
+    margin: 0 .3rem;
+}
+
+
+
+/* SEARCH BOX */
+.search-box{
+    box-sizing: border-box;
+    background-color: var(--cor-fundo-terc);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 42px;
+    border-radius: 40px;
+    border: none;
+    width: 40%;
+    margin: 2rem 0;
+}
+
+.search-btn{
+    color: #fff;
+    float: right;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--cor-fundo-secund);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+}
+
+.search-btn:is(:hover, :focus){
+    background: var(--cor-selecionado);
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+    transition: .4s;
+    line-height: 40px;
+    width: 240px;
+    
+}
+
+
+
+
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+	<link rel="stylesheet" href="./assets/css/cabecalho.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet" href="./assets/css/adress.css">
+	<link rel="stylesheet" href="./assets/css/rodape.css">
+    <title>Chacal Service | User Cadastro</title>
+</head>
+<body>
+    <header class="cabecalho">
+		<img src="./assets/img/logo-chacal.png" class="cabecalho__logo" alt="Imagem do logo da empresa">
+		<ul class="cabecalho__lista">
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html">Home</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html#planos">Planos</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html#FAQ">FAQ</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link btnEndereco" onclick="openModal()">Endereço</a></li>
+		</ul>
+		<a class="cta" href="contato.html">Contato</a>
+		<button class="menu" aria-label="Menu"><i class="uil uil-bars"></i></button>
+		<button id= "open-apps" class="apps" aria-label="abrir menu flutuante"><i class="uil uil-angle-down"></i></button>
+		<button id="close-apps" aria-label="fechar menu flutuante"><i class="uil uil-angle-up"></i></button>
+
+	</header>
+
+	<div class="ul-mobile">
+		<ul class="mobile__lista">
+			<li class="mobile__item"><a class="mobile__lista--link" href="home.html">Home</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="home.html#planos">Planos</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="home.html#FAQ">FAQ</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link btnEndereco" onclick="openModal()">Endereço</a></li>
+		</ul>
+
+		<a class="cta-mobile" href="contato.html">Contato</a>
+	</div>
+
+	<nav class="navegacao">
+		<ul>
+			<li class="lista">
+				<a href="home.html">
+					<span class="icone"><ion-icon name="person-outline"></ion-icon></span>
+					<span class="titulo" title="Operacional">Operacional</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="#" onclick="semAcesso()">
+					<span class="icone"><ion-icon name="card-outline"></ion-icon></span>
+					<span class="titulo" title="Financeiro">Financeiro</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="#">
+					<span class="icone"><ion-icon name="people-outline"></ion-icon></span>
+					<span class="titulo" title="RH">RH</span>
+				</a>
+			</li>
+			<li class="lista active">
+				<a href="cadastro.html">
+					<span class="icone"><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class="titulo" title="Cadastro User">Cadastro</span>
+				</a>
+			</li>
+			<li class="lista" onclick="semAcesso()">
+				<a href="#">
+					<span class="icone" id="acesso"><ion-icon name="settings-outline"></ion-icon></span>
+					<span class="titulo" title="Configuração">Configurações</span>
+				</a>
+			</li>
+			<li class="lista" onclick="semAcesso()">
+				<a href="#">
+					<span class="icone"><ion-icon name="help-circle-outline"></ion-icon></span>
+					<span class="titulo" title="Ajuda">Ajuda</span>
+				</a>
+			</li>
+			<li class="lista">
+				<a href="index.html">
+					<span class="icone"><ion-icon name="log-out-outline"></ion-icon></span>
+					<span class="titulo" title="Sair">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+    <section class="container">
+        <h1 id="registro">Registro</h1>
+
+        <form action="#">
+            
+            <div id="principal" class="forma principal">
+                <div class="detalhes pessoais">
+                    <h2 class="titulo">Detalhes Pessoais</h2>
+                </div>
+
+                <fieldset class="fields">
+                    <div class="input-field">
+                        <label for="name">Nome Completo *</label>
+                        <input id="name" type="text" placeholder="Insira o nome completo" pattern="^[a-zA-Z][a-zA-Z-_\.]{4,20}$" data-tipo="nome" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="date">Data Nascimento *</label>
+                        <input id="date" type="date" placeholder="Insira a data de nascimento" required>
+                        <span class="input-mensagem-erro">O campo data não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">E-mail *</label>
+                        <input id="email" type="email" placeholder="Insira um e-mail válido" pattern="(\w|\.)+@\w+\.\w+" title="Cadastre e-mail gmail" data-tipo="email" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" type="tel" placeholder="Insira um número de telefone" data-tipo="phone">
+                    </div>
+                    <div class="input-field">
+                        <label for="gener">Gênero</label>
+                        <select id="gener" type="text">
+                            <option value="">Selecione o gênero</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Neutro">Neutro</option>
+                            <option value="Outro">Outro</option>
+                            <option value="Transgênero">Transgênero</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="add">Cargo *</label>
+                        <select id="add" type="text" required>
+                            <option value="">Selecione o cargo</option>
+                            <option value="Agt. Portaria">Agt. Portaria</option>
+                            <option value="Ass. Administrativo">Ass. Administrativo</option>
+                            <option value="Conferente">Conferente</option>
+                            <option value="Diretor">Diretor</option>
+                            <option value="CEO">CEO</option>   
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="principal2" class="forma principal">
+                <div class="detalhes identidade">
+                    <h2 class="titulo">Detalhes Identidades</h2>
+                </div>
+
+                <fieldset class="fields">
+                    <div class="input-field">
+                        <label for="code">ID *</label>
+                        <input id="code" type="text" placeholder="Insina o número de cadastro" pattern="^\d{5}$" title="Insira cinco dígitos" data-tipo="code" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="init">Admissão</label>
+                        <input id="init" type="date" placeholder="Data de admissão">
+                    </div>
+                    <div class="input-field">
+                        <label for="user">Username *</label>
+                        <input id="user" type="text" placeholder="Crie o username" pattern="^(@.{4,10})$" title="Insira '@' mais o username" data-tipo="username" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Senha *</label>
+                        <input id="password" type="text" placeholder="Crie uma Senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,10}$" aria-label="Insira sua senha" title="A senha deve ter conter 6 a 10 caracteres, uma letra maíuscula e um caractere especial" data-tipo="password">
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="log">Acesso *</label>
+                        <select id="log" type="text" required>
+                            <option value="">Selecione nível de acesso</option>
+                            <option value="Basico">Básico</option>
+                            <option value="Avancado">Avançado</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Master">Master</option>
+                        </select>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label>Timer</label>
+                        <input type="datetime-local" placeholder="Tempo de acesso">
+                    </div>
+                </fieldset>
+            </div>
+                
+            <div id="btn1" class="btns">
+                <button id="btn-salvar" class="btn btn-princ btn1"><i class="uil uil-message"></i>Salvar</button>
+                <button id="bx-pesquisar" class="btn btn-princ btn1"><i class="uil uil-search"></i>Pesquisar</button>
+            </div>
+
+
+            <div id="secundaria" class="forma secundaria">
+                <div class="search-box">
+                    <input class="search-txt" type="search" id="search" name="" placeholder="Faça sua pesquisa">
+                    <a class="search-btn" href="#"><i class="uil uil-search"></i></a> 
+                </div>
+
+                <div class="detalhes pessoais">
+                    <h2 class="titulo">Informações gerais</h2>
+                </div>
+
+                <fieldset class="fields">
+                    <div class="input-field">
+                        <label for="name">Nome Completo</label>
+                        <input id="name" type="text" placeholder="Insira o nome completo" disabled>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="date">Data Nascimento</label>
+                        <input id="date" type="date" placeholder="Insira a data de nascimento" disabled>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" placeholder="Insira um e-mail válido" disabled>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" type="tel" placeholder="Insira um número de telefone" disabled>
+                    </div>
+                    <div class="input-field">
+                        <label for="gener">Gênero</label>
+                        <select id="gener" type="text" disabled>
+                            <option value="">Selecione seu gênero</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Neutro">Neutro</option>
+                            <option value="Outro">Outro</option>
+                            <option value="Transgênero">Transgênero</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="add">Cargo</label>
+                        <input id="add" type="text" placeholder="Insira o cargo na empresa" disabled>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="secundaria2" class="forma secundaria">
+                <fieldset class="fields">
+                    <div class="input-field">
+                        <label>ID</label>
+                        <input type="number" placeholder="Insina o número de cadastro" disabled>
+                    </div>
+                    <div class="input-field">
+                        <label>Admissão</label>
+                        <input type="date" placeholder="Data de admissão" disabled>
+                    </div>
+                    <div class="input-field">
+                        <label>Username</label>
+                        <input type="text" placeholder="Crie o username" disabled>
+                    </div>
+                    <div class="input-field">
+                        <label>Senha</label>
+                        <input type="text" placeholder="Crie uma Senha" disabled>
+                    </div>
+                    <div class="input-field">
+                        <label>Acesso</label>
+                        <select id="gener" type="text" disabled>
+                            <option value="">Selecione nível de acesso</option>
+                            <option value="Basico">Básico</option>
+                            <option value="Avancado">Avançado</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Master">Master</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label>Timer</label>
+                        <input type="datetime-local" placeholder="Tempo de acesso" disabled>
+                    </div>
+                </fieldset>
+            </div>
+                
+            <div id="btn2" class="btns">
+                <button id="btn-voltar" class="btn btn-princ"><i class="uil uil-arrow-left"></i>Voltar</button>
+                <button id="btn-editar" class="btn btn-princ"><i class="uil uil-user-check"></i>Editar</button>
+                <button id="btn-excluir" class="btn btn-princ"><i class="uil uil-trash"></i>Excluir</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="modal-container" id="endereco" role="dialog" aria-labelledby="tituloDialog">
+        <div class="dialog-modal">
+            <address class="modal">
+                <h2>Chacal Service</h2>
+                <p>Rua Hokkaido, 25 - SALA C-4</p>
+                <p>Bairro Parque Dez de Novembro</p>
+                <p class="p2">Manaus-AM, 69054-664</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63745.09743629232!2d-60.0596202!3d-3.0763588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b205d47f7ff%3A0xbcabf83c1cf40c67!2sCHACAL%20SERVICE!5e0!3m2!1spt-BR!2sbr!4v1653787280202!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>	
+            </address>
+    
+            <div class="botoes">
+                <button class="cta btn-compartilhar" onclick="copyText()"><i class="uil uil-share" title="Compartilhar link"></i></button>
+                <button class="cta btn-fechar" onclick="closeModal()" aria-label="Fechar janela modal"><i class="uil uil-multiply" title="Botão fechar"></i></button>
+            </div>
+            <div class="dialog-overlay">
+                <input id="copiar" class="share-adrees" type="text" value="https://goo.gl/maps/TFfyJPMPTTipKWmy9">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/adress.js"></script>
+    <script src="./assets/js/home-oper.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/adress.js"></script>
+    <script src="./assets/js/cadastro.js"></script>
+    <script src="./assets/js/formapp.js" type="module"></script>
+</body>
+</html>

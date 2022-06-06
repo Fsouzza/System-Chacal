@@ -126,6 +126,10 @@
 	font-size: 2rem;
 }
 
+.btnEndereco{
+	cursor: pointer;
+}
+
 
 
 /*  ------------------ MOBILE VERSION ----------------- */

@@ -100,33 +100,27 @@
                 <fieldset class="fields">
                     <div class="input-field">
                         <label for="name">Nome Completo *</label>
-                        <input id="name" type="text" placeholder="Insira o nome completo" pattern="^[a-zA-Z][a-zA-Z-_\.]{4,20}$" data-tipo="nome" required>
+                        <input id="name" type="text" placeholder="Insira o nome e sobrenome" pattern="(?:(\w+-?\w+)) (?:(\w+))(?: (\w+))?$" data-tipo="nome" required>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-field">
                         <label for="date">Data Nascimento *</label>
-                        <input id="date" type="date" placeholder="Insira a data de nascimento" required>
+                        <input id="date" type="date" placeholder="Insira a data de nascimento" data-tipo="dataNascimento" required>
                         <span class="input-mensagem-erro">O campo data não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="rg">RG</label>
+                        <input id="rg" type="tel" placeholder="Insira o RG do funcionário" data-tipo="rg">
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" type="texto" name="tel" placeholder="Número de celular com DDD" maxlength="15">
                     </div>
                     <div class="input-field">
                         <label for="email">E-mail *</label>
                         <input id="email" type="email" placeholder="Insira um e-mail válido" pattern="(\w|\.)+@\w+\.\w+" title="Cadastre e-mail gmail" data-tipo="email" required>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
-                    </div>
-                    <div class="input-field">
-                        <label for="phone">Telefone</label>
-                        <input id="phone" type="tel" placeholder="Insira um número de telefone" data-tipo="phone">
-                    </div>
-                    <div class="input-field">
-                        <label for="gener">Gênero</label>
-                        <select id="gener" type="text">
-                            <option value="">Selecione o gênero</option>
-                            <option value="Feminino">Feminino</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Neutro">Neutro</option>
-                            <option value="Outro">Outro</option>
-                            <option value="Transgênero">Transgênero</option>
-                        </select>
                     </div>
                     <div class="input-field">
                         <label for="add">Cargo *</label>
@@ -154,8 +148,14 @@
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-field">
-                        <label for="init">Admissão</label>
-                        <input id="init" type="date" placeholder="Data de admissão">
+                        <label for="init">Admissão *</label>
+                        <input id="init" type="date" placeholder="Data de admissão" data-tipo="init" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-field">
+                        <label for="cpf">CPF *</label>
+                        <input id="cpf" type="text" placeholder="Insira o CPF do funcionário" data-tipo="cpf" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-field">
                         <label for="user">Username *</label>
@@ -177,10 +177,6 @@
                             <option value="Master">Master</option>
                         </select>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
-                    </div>
-                    <div class="input-field">
-                        <label>Timer</label>
-                        <input type="datetime-local" placeholder="Tempo de acesso">
                     </div>
                 </fieldset>
             </div>
@@ -205,37 +201,26 @@
                     <div class="input-field">
                         <label for="name">Nome Completo</label>
                         <input id="name" type="text" placeholder="Nome do funcionário" disabled>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-field">
                         <label for="date">Data Nascimento</label>
                         <input id="date" type="date" placeholder="Data de nascimento" disabled>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-field">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" placeholder="E-mail cadastrado" disabled>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                        <label for="cpf">RG</label>
+                        <input id="cpf" type="tel" placeholder="RG do funcionário" disabled>
                     </div>
                     <div class="input-field">
                         <label for="phone">Telefone</label>
                         <input id="phone" type="tel" placeholder="Número de celular" disabled>
                     </div>
                     <div class="input-field">
-                        <label for="gener">Gênero</label>
-                        <select id="gener" type="text" disabled>
-                            <option value="">Gênero informado</option>
-                            <option value="Feminino">Feminino</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Neutro">Neutro</option>
-                            <option value="Outro">Outro</option>
-                            <option value="Transgênero">Transgênero</option>
-                        </select>
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" placeholder="E-mail cadastrado" disabled>
                     </div>
                     <div class="input-field">
                         <label for="add">Cargo</label>
                         <input id="add" type="text" placeholder="Cargo atual na empresa" disabled>
-                        <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                 </fieldset>
             </div>
@@ -249,6 +234,10 @@
                     <div class="input-field">
                         <label>Admissão</label>
                         <input type="date" placeholder="Data de admissão" disabled>
+                    </div>
+                    <div class="input-field">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="tel" placeholder="CPF do funcionário" disabled>
                     </div>
                     <div class="input-field">
                         <label>Username</label>
@@ -267,10 +256,6 @@
                             <option value="Administrador">Administrador</option>
                             <option value="Master">Master</option>
                         </select>
-                    </div>
-                    <div class="input-field">
-                        <label>Timer</label>
-                        <input type="datetime-local" placeholder="Tempo de acesso" disabled>
                     </div>
                 </fieldset>
             </div>

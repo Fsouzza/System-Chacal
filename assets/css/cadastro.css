@@ -155,6 +155,11 @@ select{
 }
 
 
+input:disabled, select:disabled{
+    opacity: 0.4;
+}
+
+
 
 /* BOTOES */
 .container form .btn{

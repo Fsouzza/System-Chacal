@@ -21,11 +21,11 @@ const tiposDeErro = [
 
 const mensagensDeErro = {
     nome: {
-        valueMissing: 'O campo de nome não pode estar vazio.',
+        valueMissing: 'O campo de usuário está vazio.',
         patternMismatch: 'Insira o @ mais o usuário cadastrado.'
     },
     senha: {
-        valueMissing: 'O campo de senha não pode estar vazio.',
+        valueMissing: 'O campo de senha está vazio.',
         patternMismatch: 'insira letra maiúscula, número e símbolo.'
     },
 }

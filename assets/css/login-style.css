@@ -101,7 +101,7 @@ button{
     background-color: var(--cor-azul);
     border: none;
     padding: 0.75rem;
-    width: 100%;
+    width: 95%;
     margin-top: .4rem;
     border-radius: 8px;
     color: var(--branco);

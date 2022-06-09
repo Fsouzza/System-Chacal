@@ -31,7 +31,7 @@
 
 
 .imagem__contato{
-    width: 18rem;
+    width: 220px;
     max-width: 400px;
     margin-bottom: 2.2rem;
 }
@@ -120,7 +120,6 @@ input, textarea{
     border: none;
     
 }
-
 
 
 .form__nome{
@@ -253,8 +252,9 @@ label{
     }
 
     .btn{
-        width: 100%;
-        margin-bottom: 1rem;
+        max-width: 100vw;
+        margin-bottom: 2rem;
+        margin: auto;
     }
 
     .contato__aside span, p{

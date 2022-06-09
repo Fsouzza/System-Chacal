@@ -19,8 +19,8 @@
 		<img src="./assets/img/logo-chacal.png" class="cabecalho__logo" alt="Imagem do logo da empresa">
 		<ul class="cabecalho__lista">
 			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html">Home</a></li>
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#planos">Planos</a></li>
-			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="#FAQ">FAQ</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html#planos">Planos</a></li>
+			<li class="cabecalho__item"><a class="cabecalho__lista--link" href="home.html#FAQ">FAQ</a></li>
 			<li class="cabecalho__item"><a class="cabecalho__lista--link btnEndereco" onclick="openModal()">Endereço</a></li>
 		</ul>
 		<a class="cta" href="contato.html">Contato</a>
@@ -32,9 +32,9 @@
 
 	<div class="ul-mobile">
 		<ul class="mobile__lista">
-			<li class="mobile__item"><a class="mobile__lista--link" href="home.html">Home</a></li>
-			<li class="mobile__item"><a class="mobile__lista--link" href="#planos">Planos</a></li>
-			<li class="mobile__item"><a class="mobile__lista--link" href="#FAQ">FAQ</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="home.html#home">Home</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="home.html#planos">Planos</a></li>
+			<li class="mobile__item"><a class="mobile__lista--link" href="home.html#FAQ">FAQ</a></li>
 			<li class="mobile__item"><a class="mobile__lista--link btnEndereco" onclick="openModal()">Endereço</a></li>
 		</ul>
 
@@ -47,43 +47,43 @@
 			<li class="lista">
 				<a href="home.html">
 					<span class="icone"><ion-icon name="person-outline"></ion-icon></span>
-					<span class="titulo">Operacional</span>
+					<span class="titulo" title="Operacional">Operacional</span>
 				</a>
 			</li>
 			<li class="lista">
 				<a href="#" onclick="semAcesso()">
 					<span class="icone"><ion-icon name="card-outline"></ion-icon></span>
-					<span class="titulo">Financeiro</span>
+					<span class="titulo" title="Financeiro">Financeiro</span>
 				</a>
 			</li>
 			<li class="lista">
 				<a href="#" onclick="semAcesso()">
-					<span class="icone"><ion-icon name="business-outline"></ion-icon></span>
-					<span class="titulo">Comercial</span>
+					<span class="icone"><ion-icon name="people-outline"></ion-icon></span>
+					<span class="titulo" title="RH">RH</span>
 				</a>
 			</li>
-			<li class="lista" onclick="semAcesso()">
-				<a href="#">
-					<span class="icone"><ion-icon name="people-outline"></ion-icon></span>
-					<span class="titulo">RH</span>
+			<li class="lista">
+				<a href="cadastro.html">
+					<span class="icone"><ion-icon name="add-circle-outline"></ion-icon></span>
+					<span class="titulo" title="Cadastro User">Cadastro</span>
 				</a>
 			</li>
 			<li class="lista" onclick="semAcesso()">
 				<a href="#">
 					<span class="icone" id="acesso"><ion-icon name="settings-outline"></ion-icon></span>
-					<span class="titulo">Configurações</span>
+					<span class="titulo" title="Configuração">Configurações</span>
 				</a>
 			</li>
-			<li class="lista">
-				<a href="guia-sistema.html">
+			<li class="lista" onclick="semAcesso()">
+				<a href="#">
 					<span class="icone"><ion-icon name="help-circle-outline"></ion-icon></span>
-					<span class="titulo">Ajuda</span>
+					<span class="titulo" title="Ajuda">Ajuda</span>
 				</a>
 			</li>
 			<li class="lista">
 				<a href="index.html">
 					<span class="icone"><ion-icon name="log-out-outline"></ion-icon></span>
-					<span class="titulo">Logout</span>
+					<span class="titulo" title="Sair">Logout</span>
 				</a>
 			</li>
 		</ul>

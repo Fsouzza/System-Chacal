@@ -15,6 +15,7 @@
     height: 100%;
 }
 
+
 .titulo__secao{
     margin-bottom: 4rem;
     padding: .26rem;
@@ -118,7 +119,7 @@
 
 
 .quadro__card h4{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     line-height: 2;
 }

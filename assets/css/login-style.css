@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap');
 
 .fundo{
@@ -72,10 +71,20 @@
 	height: 36px;
 }
 
+.input-container--invalido .input--user{
+	background-image: url(../img/user-erro.svg);
+	height: 35px;
+}
+
 
 .input--senha{
 	background-image: url(../img/lock.svg);
 	height: 36px;
+}
+
+.input-container--invalido .input--senha{
+	background-image: url(../img/lock-erro.svg);
+	height: 35px;
 }
 
 
@@ -95,19 +104,11 @@ button{
     width: 100%;
     margin-top: .4rem;
     border-radius: 8px;
-    color: aliceblue;
+    color: var(--branco);
     font-size: 18px;
 }
 
-button:hover{
-	background-color: #1e80ff;
-	cursor: pointer;
-	transition: 0.7s;
-	transform: translate(1.2);
-}
-
-
-button:focus{
+button:hover, button:focus{
 	background-color: #1e80ff;
 	cursor: pointer;
 	transition: 0.7s;
@@ -143,8 +144,9 @@ button:focus{
 }
 
 .input-container--invalido .input {
-    border: 3.5px solid rgb(223, 64, 16);
+    border: 3.5px solid #F2A30F;
     border-radius: 7px;
+	color: #F2A30F;
 }
 
 .input-mensagem-erro {
@@ -152,7 +154,7 @@ button:focus{
 }
 
 .input-container--invalido .input-mensagem-erro {
-    color: rgb(223, 64, 16);
+    color: var(--cor-amarelo);
     display: block;
     margin-top: 0.1rem;
     padding-left: 0.5rem;

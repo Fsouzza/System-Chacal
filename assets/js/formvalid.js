@@ -168,6 +168,3 @@ function checaDigitoVerificador(cpf, multiplicador) {
 function confirmaDigito(soma) {
     return 11 - (soma % 11)
 }
-
-
-

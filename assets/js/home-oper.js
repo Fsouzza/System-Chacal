@@ -31,8 +31,8 @@ function semAcesso(){
 		icon: 'warning',
 		title: 'Atenção!',
 		text: 'Você não possui acesso a este campo',
-	  })
-
+	});
+	location.reload();
 }
 
 

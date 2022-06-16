@@ -1,0 +1,75 @@
+/* <<<<<<< ALERT DE SIGNUP >>>>>>>> */
+.modal-signup{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 999;
+}
+
+.dialog-modal-signup{
+	color: #fff;
+	background-color: var(--cor-menu);
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    border-radius: .5rem;
+    width: 340px;
+}
+
+.show-modal-signup{
+    display: block;
+    animation: signup .4s;
+}
+
+.signup__fig{
+    margin-bottom: 1.5rem;
+}
+
+.signup__fig-logo{
+    width: 56px;
+    height: 56px;
+}
+
+
+.dialog-modal-signup p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.signup__icon{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.signup__icon:hover, .signup__icon:focus{
+    color: var(--cor-selecionado);
+}
+
+.btnSignUp{
+    width: 25%;
+}
+
+
+@keyframes signup{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}

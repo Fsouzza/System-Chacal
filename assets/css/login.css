@@ -7,13 +7,9 @@
 .tela-login{
 	background-color: rgba(38,38,38,0.9);
 	min-width: 340px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	color: var(--branco);
 	border-radius: 12px;
-	position: absolute;
+	position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -44,7 +40,7 @@
     width: 40px;
     bottom: 1px;
     left: 0;
-    border-radius: 25%;
+    border-radius: 30%;
     background: var(--cor-selecionado);
 }
 
@@ -101,7 +97,7 @@ button{
     background-color: var(--cor-azul);
     border: none;
     padding: 0.75rem;
-    width: 86%;
+    width: 100%;
     margin-top: .4rem;
     border-radius: 8px;
     color: var(--branco);
@@ -135,7 +131,16 @@ button:hover, button:focus{
 	color: rgb(255, 73, 73);
 	text-decoration: none;
 	padding-left: 0.5rem;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	width: 80px;
 }
+
+.problemas--solution:hover, .problemas--solution:focus{
+	background: transparent;
+}
+
 
 
 /* ------ INPUT DE ERRO ------ */
@@ -196,6 +201,6 @@ footer a{
 
 
 	button{
-		width: 86%;
+		width: 100%;
 	}
 }

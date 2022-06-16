@@ -8,39 +8,50 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/login-style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/login.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/base.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/menu.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/alerts.css">
 </head>
 
 <body class="fundo">
 
-	<main>
+	<main class="tela">
 		<form class="tela-login">
 			<h1 id="login">Login</h1>
 
 			<div class="input-container">
-				<input type="text" class="input input--icone input--user place" id="username" placeholder="@username" pattern="^(@.{4,10})$" title="Insira seu login com o '@' mais o username cadastrado" data-tipo="nome" required>
+				<input type="text" class="input input--icone input--user place" id="username" placeholder="@username" pattern="^(@.{4,10})$" title="Insira o seu username cadastrado" data-tipo="loginnome" required>
 				<span class="input-mensagem-erro">Este campo não está válido</span>
 			</div>
 
 			<div class="input-container ">
-				<input type="password" class="input input--icone input--senha place" id="senha" placeholder="*********" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,10}$" aria-label="Insira sua senha" title="A senha deve ter no entre 6 a 10 caracteres, uma letra maíuscula e um caractere especial" data-tipo="senha" required>
+				<input type="password" class="input input--icone input--senha place" id="senha" placeholder="*********" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,10}$" aria-label="Insira a sua senha" title="Insira a sua senha" data-tipo="loginsenha" required>
 				<span class="input-mensagem-erro">Este campo não está válido</span>
 			</div>
 
 			<button type="submit" onclick="acessar(); return false">Entrar</button>
-			<span class="problemas--info">Forgot password? <a class="problemas--solution" id="sign-up" href=""> Sign Up</a></span>
+			<span class="problemas--info">Forgot password? <button class="problemas--solution" id="sign-up"> Sign Up</button></span>
 		</form>
+
+		<div class="modal-signup" id="alert-singup" role="dialog" aria-labelledby="tituloDialog">
+			<div class="dialog-modal-signup">
+				<i class="uil uil-multiply signup__icon"></i>
+				<figure class="signup__fig">
+					<img class="signup__fig-logo" src="./assets/img/logo-chacal.png" alt="logo da empresa">
+				</figure>
+				<p>Contacte o administrador do sistema para autorizar seu acesso.</p>
+				<button class="btnSignUp" onclick="closeSignup()">OK</button>
+			</div>
+		</div>
 	</main>
 
 	<footer>
-		<p>Coded By <strong><a href="https://www.instagram.com/mryeagger" style="text-decoration: none; color: ghostwhite;" target="_blank">Mr Yeagger</a></strong></p>
+		<p>Coded By <strong><a href="https://www.instagram.com/mryeagger" target="_blank">Mr Yeagger</a></strong></p>
 	</footer>
-
-	<script src="assets/js/js-login.js"></script>
+	<script src="assets/js/login.js"></script>
 	<script src="assets/js/app.js" type="module"></script>
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="assets/js/alerts.js"></script>
 </body>
 
 </html>

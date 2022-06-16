@@ -11,9 +11,9 @@ function acessoPermitido(){
 function acessoNegado(){
 	let erroAcesso = document.querySelector('.login-erro');
 
-	login.value = "";
-	senha.value = "";
 	erroAcesso.classList.add('show-login-erro');
+	login.value == "";
+	senha.value == "";
 }
 
 

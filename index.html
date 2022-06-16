@@ -26,12 +26,12 @@
 			</div>
 
 			<div class="input-container">
-				<input type="text" class="input input--icone input--user place" id="username" placeholder="@username" pattern="^(@.{4,10})$" title="Insira o seu username cadastrado" data-tipo="loginnome" required>
+				<input type="text" class="input input--icone input--user place" id="username" placeholder="@username" title="Insira o seu username cadastrado" data-tipo="loginnome" required>
 				<span class="input-mensagem-erro">Este campo não está válido</span>
 			</div>
 
 			<div class="input-container ">
-				<input type="password" class="input input--icone input--senha place" id="senha" placeholder="*********" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,10}$" aria-label="Insira a sua senha" title="Insira a sua senha" data-tipo="loginsenha" required>
+				<input type="password" class="input input--icone input--senha place" id="senha" placeholder="*********" name="pass"  aria-label="Insira a sua senha" title="Insira a sua senha" data-tipo="loginsenha" required>
 				<span class="input-mensagem-erro">Este campo não está válido</span>
 			</div>
 
@@ -46,7 +46,7 @@
 					<img class="signup__fig-logo" src="./assets/img/logo-chacal.png" alt="logo da empresa">
 				</figure>
 				<p>Entre em contato com o administrador do sistema para autorizar seu acesso.</p>
-				<button class="btnSignUp" onclick="closeSignup()">OK</button>
+				<button class="btnSignUp">OK</button>
 			</div>
 		</div>
 	</main>
@@ -54,9 +54,10 @@
 	<footer>
 		<p>Coded By <strong><a href="https://www.instagram.com/mryeagger" target="_blank">Mr Yeagger</a></strong></p>
 	</footer>
+	
 	<script src="assets/js/login.js"></script>
 	<script src="assets/js/app.js" type="module"></script>
-	<script src="assets/js/alerts.js"></script>
+	
 </body>
 
 </html>

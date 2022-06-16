@@ -89,138 +89,138 @@
 		</ul>
 	</nav>
 
-<section class="contato">
-	<div class="container contato__cont">
-		<aside class="contato__aside">
-			<figure class="aside__imagem">
-				<img class="imagem__contato" src="./assets/img/Contato.png" alt="">
-			</figure>
-			<h2>Contate-nos</h2>
+	<section class="contato">
+		<div class="container contato__cont">
+			<aside class="contato__aside">
+				<figure class="aside__imagem">
+					<img class="imagem__contato" src="./assets/img/Contato.png" alt="">
+				</figure>
+				<h2>Contate-nos</h2>
 
-			<div class="mobile-contatc">
-				<div>
-					<span>Horario de funcionamento:</span>
-					<p>Seg - Qui - 07:00h às 17:00h</p>
-					<p id="p2">Sex - Sáb - 08:30h às 12:00h</p>
+				<div class="mobile-contatc">
+					<div>
+						<span>Horario de funcionamento:</span>
+						<p>Seg - Qui - 07:00h às 17:00h</p>
+						<p id="p2">Sex - Sáb - 08:30h às 12:00h</p>
+					</div>
+
+					<div>
+						<ul class="contato__detalhes">
+							<li>
+								<i class="uil uil-mobile-android"></i>
+								<h5>+55 92 982250150</h5>
+							</li>
+							<li>
+								<i class="uil uil-envelope"></i>
+								<h5>comercial@chacalservice.com.br</h5>
+							</li>
+							<li>
+								<i class="uil uil-map-marker-alt"></i>
+								<h5>Manaus, Amazonas</h5>
+							</li>
+						</ul>
+					</div>
 				</div>
 
-				<div>
-					<ul class="contato__detalhes">
-						<li>
-							<i class="uil uil-mobile-android"></i>
-							<h5>+55 92 982250150</h5>
-						</li>
-						<li>
-							<i class="uil uil-envelope"></i>
-							<h5>comercial@chacalservice.com.br</h5>
-						</li>
-						<li>
-							<i class="uil uil-map-marker-alt"></i>
-							<h5>Manaus, Amazonas</h5>
-						</li>
-					</ul>
+				<ul class="contato__sociais">
+						<li><a href="https://wa.me/559282250150" target="_blank" title="whatsApp"><i class="uil uil-whatsapp"></i></a></li>
+						<li><a href="mailto:comercial@chacalservice.com.br" target="_blank" title="Enviar e-mail"><i class="uil uil-envelope"></i></a></li>
+						<li><a href="https://www.instagram.com/chacalservice.am" target="_blank" title="instagram"><i class="uil uil-instagram"></i></a></li>
+						<li><a href="https://www.facebook.com/Chacalserviceam" target="_blank" title="facebook"><i class="uil uil-facebook"></i></a></li>
+				</ul>
+			</aside>
+
+
+			<form class="contato__form" action="https://formspree.io/f/xwkyyeqp" method="POST">
+				<div class="form__nome">
+					<label for="nome">Nome</label><br>
+					<input id="nome" type="text" name="Primeiro Nome" placeholder="Primeiro Nome" required><br>
+
+					<label for="sobrenome">Sobrenome</label><br>
+					<input id="sobrenome" type="text" name="Sobrenome" placeholder="Último Nome" required><br>
 				</div>
-			</div>
 
-			<ul class="contato__sociais">
-					<li><a href="https://wa.me/559282250150" target="_blank" title="whatsApp"><i class="uil uil-whatsapp"></i></a></li>
-					<li><a href="mailto:comercial@chacalservice.com.br" target="_blank" title="Enviar e-mail"><i class="uil uil-envelope"></i></a></li>
-					<li><a href="https://www.instagram.com/chacalservice.am" target="_blank" title="instagram"><i class="uil uil-instagram"></i></a></li>
-					<li><a href="https://www.facebook.com/Chacalserviceam" target="_blank" title="facebook"><i class="uil uil-facebook"></i></a></li>
-			</ul>
-		</aside>
-
-
-		<form class="contato__form" action="https://formspree.io/f/xwkyyeqp" method="POST">
-			<div class="form__nome">
-				<label for="nome">Nome</label><br>
-				<input id="nome" type="text" name="Primeiro Nome" placeholder="Primeiro Nome" required><br>
-
-				<label for="sobrenome">Sobrenome</label><br>
-				<input id="sobrenome" type="text" name="Sobrenome" placeholder="Último Nome" required><br>
-			</div>
-
-			<div class="form__email">
-				<label for="email">E-mail</label><br>
-				<input id="email" type="email" name="Endereço de E-mail" placeholder="Seu endereço de e-mail" required>
-			</div>
-			<textarea name="Mensagem" id="mensagem" rows="8" required></textarea>
-			<button type="submit" class="btn"><i class="uil uil-message icon-send"></i>  Enviar Mensagem</button>
-		</form>
-	</div>
-</section>
-
-<div class="modal-container" id="endereco" role="dialog" aria-labelledby="tituloDialog">
-	<div class="dialog-modal">
-		<address class="modal">
-			<h2>Chacal Service</h2>
-			<p>Rua Hokkaido, 25 - SALA C-4</p>
-			<p>Bairro Parque Dez de Novembro</p>
-			<p class="p2">Manaus-AM, 69054-664</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63745.09743629232!2d-60.0596202!3d-3.0763588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b205d47f7ff%3A0xbcabf83c1cf40c67!2sCHACAL%20SERVICE!5e0!3m2!1spt-BR!2sbr!4v1653787280202!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>	
-		</address>
-
-		<div class="botoes">
-			<button class="cta btn-compartilhar"><i class="uil uil-share"></i></button>
-			<button class="cta btn-fechar" onclick="closeModal()" aria-label="Fechar janela modal"><i class="uil uil-multiply"></i></button>
+				<div class="form__email">
+					<label for="email">E-mail</label><br>
+					<input id="email" type="email" name="Endereço de E-mail" placeholder="Seu endereço de e-mail" required>
+				</div>
+				<textarea name="Mensagem" id="mensagem" rows="8" required></textarea>
+				<button type="submit" class="btn"><i class="uil uil-message icon-send"></i>  Enviar Mensagem</button>
+			</form>
 		</div>
-		<div class="dialog-overlay"></div>
-	</div>
-</div>
+	</section>
 
+	<div class="modal-container" id="endereco" role="dialog" aria-labelledby="tituloDialog">
+		<div class="dialog-modal">
+			<address class="modal">
+				<h2>Chacal Service</h2>
+				<p>Rua Hokkaido, 25 - SALA C-4</p>
+				<p>Bairro Parque Dez de Novembro</p>
+				<p class="p2">Manaus-AM, 69054-664</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63745.09743629232!2d-60.0596202!3d-3.0763588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b205d47f7ff%3A0xbcabf83c1cf40c67!2sCHACAL%20SERVICE!5e0!3m2!1spt-BR!2sbr!4v1653787280202!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>	
+			</address>
 
-<footer>
-	<div class="container rodape__container">
-		<div class="rodape__1">
-			<img class="rodape_logo" src="./assets/img/logo-chacal-c.png">
-			<h3>CHACAL SERVICE</h3>
-		</div>
-
-		<div class="rodape__2">
-			<h4>Permalinks</h4>
-			<ul class="permalinks">
-				<li class=""><a class="" href="home.html">Home</a></li>
-				<li class=""><a class="" href="#planos">Planos</a></li>
-				<li class=""><a class="" href="#FAQ">FAQ</a></li>
-				<li class=""><a class="" href="#endereco">Endereço</a></li>
-			</ul>
-		</div>
-
-		<div class="rodape__3">
-			<h4>Endereço</h4>
-			<ul class="endereco">
-				<li class="">Rua Hokkaido, 25 - Parque Dez</li>
-				<li class="">CEP: 69000-000</li>
-				<li class="">2 andar, sala C-4</li>
-			</ul>
-		</div>
-
-		<div class="rodape__4">
-			<h4>Contate-nos</h4>
-			<div>
-				<p>+55 92 9 8225-0006</p>
-				<p>comercial@chacalservice.com.br</p>
+			<div class="botoes">
+				<button class="cta btn-compartilhar"><i class="uil uil-share"></i></button>
+				<button class="cta btn-fechar" onclick="closeModal()" aria-label="Fechar janela modal"><i class="uil uil-multiply"></i></button>
 			</div>
-
-			<ul class="rodape__midias-sociais">
-				<li><a href="https://www.instagram.com/chacalservice.am" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
-				<li><a href="https://www.facebook.com/Chacalserviceam" target="_blank"><i class="uil uil-facebook"></i></a></li>
-				<li><a href="#"><i class="uil uil-twitter"></i></a></li>
-			</ul>
+			<div class="dialog-overlay"></div>
 		</div>
 	</div>
 
-	<div class="rodape__copyright">
-		<small>Copyright &copy; Mr Yeagger</small>
-	</div>
-</footer>
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="./assets/js/home-oper.js"></script>
-<script src="./assets/js/adress.js"></script>
+	<footer>
+		<div class="container rodape__container">
+			<div class="rodape__1">
+				<img class="rodape_logo" src="./assets/img/logo-chacal-c.png">
+				<h3>CHACAL SERVICE</h3>
+			</div>
 
+			<div class="rodape__2">
+				<h4>Permalinks</h4>
+				<ul class="permalinks">
+					<li class=""><a class="" href="home.html">Home</a></li>
+					<li class=""><a class="" href="#planos">Planos</a></li>
+					<li class=""><a class="" href="#FAQ">FAQ</a></li>
+					<li class=""><a class="" href="#endereco">Endereço</a></li>
+				</ul>
+			</div>
+
+			<div class="rodape__3">
+				<h4>Endereço</h4>
+				<ul class="endereco">
+					<li class="">Rua Hokkaido, 25 - Parque Dez</li>
+					<li class="">CEP: 69000-000</li>
+					<li class="">2 andar, sala C-4</li>
+				</ul>
+			</div>
+
+			<div class="rodape__4">
+				<h4>Contate-nos</h4>
+				<div>
+					<p>+55 92 9 8225-0006</p>
+					<p>comercial@chacalservice.com.br</p>
+				</div>
+
+				<ul class="rodape__midias-sociais">
+					<li><a href="https://www.instagram.com/chacalservice.am" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+					<li><a href="https://www.facebook.com/Chacalserviceam" target="_blank"><i class="uil uil-facebook"></i></a></li>
+					<li><a href="#"><i class="uil uil-twitter"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="rodape__copyright">
+			<small>Copyright &copy; Mr Yeagger</small>
+		</div>
+	</footer>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="./assets/js/menu/scroll.js"></script>
+	<script src="./assets/js/menu/nav-menu.js"></script>
+	<script src="./assets/js/menu/header.js"></script>
+	<script src="./assets/js/adress/adress.js"></script>
 </body>
 
 </html>

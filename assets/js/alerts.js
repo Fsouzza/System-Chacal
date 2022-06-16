@@ -7,7 +7,7 @@ let closeBtnSignup = document.querySelector('.signup__icon');
 
 signUp.addEventListener('click', () =>{
     msgSignUp.classList.add('show-modal-signup');
-    msgSignUp.focus();
+    btnSignUp.focus();
 });
 
 
@@ -22,7 +22,6 @@ function closeSignup(){
 
 
 // <<<<<<< ALERT DE USUARIO E SENHA INVÁLIDOS >>>>>>>>
-
 
 
 // <<<<<<< ALERT PARA SEM ACESSO >>>>>>>>

@@ -20,6 +20,11 @@
 		<form class="tela-login">
 			<h1 id="login">Login</h1>
 
+			<div class="login-erro">
+				<span class="login-erro__titulo"><i class="uil uil-exclamation-triangle login-erro__titulo-icon"></i> Acesso Negado!</span>
+				<p class="login-erro__info">Credenciais estão incorretas.</p>
+			</div>
+
 			<div class="input-container">
 				<input type="text" class="input input--icone input--user place" id="username" placeholder="@username" pattern="^(@.{4,10})$" title="Insira o seu username cadastrado" data-tipo="loginnome" required>
 				<span class="input-mensagem-erro">Este campo não está válido</span>
@@ -40,7 +45,7 @@
 				<figure class="signup__fig">
 					<img class="signup__fig-logo" src="./assets/img/logo-chacal.png" alt="logo da empresa">
 				</figure>
-				<p>Contacte o administrador do sistema para autorizar seu acesso.</p>
+				<p>Entre em contato com o administrador do sistema para autorizar seu acesso.</p>
 				<button class="btnSignUp" onclick="closeSignup()">OK</button>
 			</div>
 		</div>

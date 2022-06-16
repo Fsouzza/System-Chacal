@@ -24,11 +24,11 @@ const tiposDeErro = [
 const mensagensDeErro = {
     loginnome: {
         valueMissing: 'O campo de usuário está vazio.',
-        patternMismatch: 'Insira o @ mais o usuário cadastrado.'
+        patternMismatch: 'Insira um usuário válido.'
     },
     loginsenha: {
         valueMissing: 'O campo de senha está vazio.',
-        patternMismatch: 'Senha não está válido.'
+        patternMismatch: 'Insira um senha válida.'
     },
     nome: {
         valueMissing: 'O campo de nome não pode estar vazio.',
@@ -96,7 +96,6 @@ function validaDataNascimento(input) {
 
     input.setCustomValidity(mensagem)
 }
-
 
 
 function maiorQue18(data) {

@@ -26,7 +26,7 @@
 	font-family: 'Arimo', sans-serif;
 	font-size: 2.1rem;
 	align-self: flex-start;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
     margin-top: 0;
     margin-left: 1.25rem;
     position: relative;
@@ -51,6 +51,7 @@
     margin: .4rem 0;
     border-radius: 5px;
     outline: none;
+	border: none;
     font-size: 1rem;
 }
 
@@ -84,13 +85,38 @@
 }
 
 
-
 .input:focus{
 	border-color: rgb(222, 49, 49);
 	border-width: 3px;
 	border-radius: 6px;
 	transition: 0.3s;
 }
+
+
+/* ------ INPUT DE ERRO ------ */
+.input-container{
+	margin-bottom: .2em;
+}
+
+.input-container--invalido .input {
+    border: 3px solid #F2A30F;
+    border-radius: 7px;
+	color: #F2A30F;
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: var(--cor-amarelo);
+    display: block;
+    margin-top: 0.1rem;
+    padding-left: 0.5rem;
+	font-size: .8rem;
+	box-sizing: border-box;
+}
+
 
 
 button{
@@ -140,33 +166,6 @@ button:hover, button:focus{
 .problemas--solution:hover, .problemas--solution:focus{
 	background: transparent;
 }
-
-
-
-/* ------ INPUT DE ERRO ------ */
-.input-container{
-	margin-bottom: .2em;
-}
-
-.input-container--invalido .input {
-    border: 3.5px solid #F2A30F;
-    border-radius: 7px;
-	color: #F2A30F;
-}
-
-.input-mensagem-erro {
-    display: none;
-}
-
-.input-container--invalido .input-mensagem-erro {
-    color: var(--cor-amarelo);
-    display: block;
-    margin-top: 0.1rem;
-    padding-left: 0.5rem;
-	font-size: .8rem;
-	box-sizing: border-box;
-}
-
 
 
 /* ------ RODAPE ------ */

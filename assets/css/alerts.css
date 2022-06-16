@@ -2,7 +2,7 @@
 .modal-signup{
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -43,6 +43,7 @@
 .dialog-modal-signup p{
     text-align: center;
     margin-bottom: 1.5rem;
+    font-size: .86rem;
 }
 
 .signup__icon{
@@ -72,4 +73,36 @@
         opacity: 1;
         transform: translate3d(0,0,0);
     }
+}
+
+
+
+/* <<<<<<< ALERT ERRO ACESSO >>>>>>>> */
+.login-erro{
+    border: 3px solid var(--texto-vermelho);
+    padding: .6rem .8rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+.show-login-erro{
+    display: block;
+}
+
+.login-erro__titulo{
+    color: rgb(255, 83, 83);
+    font-size: 1rem;
+}
+
+.login-erro__titulo-icon{
+    margin-right: .275rem;
+    font-size: 1.2rem;
+}
+
+.login-erro__info{
+    font-size: .8rem;
+    color: rgb(255, 83, 83);
 }

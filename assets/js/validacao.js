@@ -67,8 +67,6 @@ const validadores = {
     
 }
 
-
-
 function mostraMensagemDeErro(tipoDeInput, input) {
     var mensagem = ''
     tiposDeErro.forEach(erro => {
@@ -79,8 +77,6 @@ function mostraMensagemDeErro(tipoDeInput, input) {
     
     return mensagem
 }
-
-
 
 
 // FUNCAO DE VALIDACAO PARA DATA DE NASCIMENTO
@@ -102,9 +98,6 @@ function maiorQue18(data) {
 
     return dataMais18 <= dataAtual
 }
-
-
-
 
 
 // FUNCAO DE VALIDACAO DE CPF

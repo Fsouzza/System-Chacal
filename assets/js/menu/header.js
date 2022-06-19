@@ -19,7 +19,7 @@ function ancoraMobile(){
 	ancoraMbl.forEach((item) =>
 	item.classList.remove('ativo'));
 	this.classList.add('ativo');
-	closeMenu2();
+	dropmenu();
 }
 
 

@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="./assets/css/base.css">
 	<link rel="stylesheet" href="./assets/css/rodape.css">
 	<link rel="stylesheet" href="./assets/css/adress.css">
+	<link rel="stylesheet" href="./assets/css/alerts.css">
 	<title>Chacal Service | Home</title>
 </head>
 
@@ -48,13 +49,13 @@
 	<nav class="navegacao">
 		<ul>
 			<li class="lista active">
-				<a href="#">
+				<a href="#home">
 					<span class="icone"><ion-icon name="person-outline"></ion-icon></span>
 					<span class="titulo" title="Operacional">Operacional</span>
 				</a>
 			</li>
-			<li class="lista">
-				<a href="#">
+			<li class="lista" onclick="openAlert()">
+				<a href="">
 					<span class="icone"><ion-icon name="card-outline"></ion-icon></span>
 					<span class="titulo" title="Financeiro">Financeiro</span>
 				</a>
@@ -503,19 +504,34 @@
 	<div class="modal-container" id="endereco" role="dialog" aria-labelledby="tituloDialog">
 		<div class="dialog-modal">
 			<address class="modal">
-				<h2>Chacal Service</h2>
+				<h2 class="modal__titulo">Chacal Service</h2>
 				<p>Rua Hokkaido, 25 - SALA C-4</p>
 				<p>Bairro Parque Dez de Novembro</p>
 				<p class="p2">Manaus-AM, 69054-664</p>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63745.09743629232!2d-60.0596202!3d-3.0763588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b205d47f7ff%3A0xbcabf83c1cf40c67!2sCHACAL%20SERVICE!5e0!3m2!1spt-BR!2sbr!4v1653787280202!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>	
 			</address>
 
+			<div class="dialog-overlay">
+				<input id="copiar" class="share-adrees" type="text" value="https://goo.gl/maps/TFfyJPMPTTipKWmy9">
+			</div>
+
 			<div class="botoes">
 				<button class="cta btn-compartilhar" onclick="copyText()"><i class="uil uil-share" title="Compartilhar link"></i></button>
 				<button class="cta btn-fechar" onclick="closeModal()" aria-label="Fechar janela modal"><i class="uil uil-multiply" title="Botão fechar"></i></button>
 			</div>
-			<div class="dialog-overlay">
-				<input id="copiar" class="share-adrees" type="text" value="https://goo.gl/maps/TFfyJPMPTTipKWmy9">
+		</div>
+	</div>
+
+	<div class="container-acesso" aria-labelledby="tituloDialogAcesso">
+		<div class="dialog-sem-acesso">
+			<div class="modal">
+				<i class="uil uil-shield-slash sem-acesso__icon"></i>
+				<h2 class="sem-acesso__titulo">Atenção!</h2>
+				<p class="info-1">Prezado, úsuário</p>
+				<p class="info-2">Acesso Negado. Atualmente você não possui acesso a este campo.</p>	
+			</div>
+			<div class="sem-acesso__botao">
+				<button class="cta" id="sem-acesso-fechar" aria-label="Fechar janela alert de acesso">OK</button>
 			</div>
 		</div>
 	</div>
@@ -574,5 +590,8 @@
 	<script src="./assets/js/menu/header.js"></script>
 	<script src="./assets/js/faq/faq.js"></script>
 	<script src="./assets/js/adress/adress.js"></script>
+
+	
+	
 </body>
 </html>

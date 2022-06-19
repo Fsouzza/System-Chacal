@@ -49,7 +49,7 @@
     padding: 1rem;
 }
 
-.modal h2{
+.modal .modal__titulo{
     margin: 1rem auto;
     font-weight: 600;
 	margin-bottom: 2rem;
@@ -71,7 +71,7 @@
 .botoes{
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
 }
 
 
@@ -101,8 +101,13 @@
     margin-bottom: 2rem;
 }
 
-.dialog-overlay{
-    display: none;
+.dialog-overlay .share-adrees{
+    display: block;
+    color: var(--cor-fundo-secund);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: auto;
 }
 
 

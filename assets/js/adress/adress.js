@@ -6,13 +6,16 @@ var dialogOverlay = document.querySelector('.dialog-overlay');
 
 function openModal(){
     modal.classList.add('show');
+    document.documentElement.style.overflow = 'hidden';
     mapa.focus();
+
 }
 
 function closeModal(){
     document.activeElement.blur();
     modal.classList.remove('show');
     endereco.forEach((item) => item.classList.remove('ativo'));
+    document.documentElement.style.overflow = 'auto';
 }
 
 dialogOverlay.addEventListener('click', closeModal);
@@ -29,6 +32,6 @@ function copyText(){
     textoCopiado.select();
     textoCopiado.setSelectionRange(0, 99999);
 
-    document.execCommand("copy");
+    document.execCommand('copy');
     alert(`O texto copiado é ${textoCopiado.value}`);
 }

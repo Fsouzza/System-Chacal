@@ -5,7 +5,6 @@ let formLogin = document.querySelector('.tela-login');
 let inputLogin = document.getElementById('username');
 let inputSenha = document.getElementById('senha');
 
-
 export function abrirSignup(){
     let btnSignUp = document.querySelector('.btnSignUp');
 
@@ -30,10 +29,6 @@ export function limpaInputs(){
 }
 
 
-
 // <<<<<<< ALERT PARA SEM ACESSO >>>>>>>>
-
-//location.reload();
-
 
 

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/cadastro.css">
     <link rel="stylesheet" href="./assets/css/adress.css">
 	<link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/alerts.css">
     <title>Chacal Service | Cadastro</title>
 </head>
 <body>
@@ -87,7 +88,7 @@
 		</ul>
 	</nav>
 
-    <section class="container">
+    <main class="container">
         <h1 id="registro">Registro</h1>
 
         <form action="#">
@@ -266,7 +267,7 @@
                 <button id="btn-excluir" class="btn btn-princ"><i class="uil uil-trash"></i>Excluir</button>
             </div>
         </form>
-    </section>
+    </main>
 
     <div class="modal-container" id="endereco" role="dialog" aria-labelledby="tituloDialog">
         <div class="dialog-modal">
@@ -287,6 +288,20 @@
             </div>
         </div>
     </div>
+
+    <div class="container-acesso" aria-labelledby="tituloDialogAcesso">
+		<div class="dialog-sem-acesso">
+			<div class="modal">
+				<i class="uil uil-shield-slash sem-acesso__icon"></i>
+				<h2 class="sem-acesso__titulo">Atenção!</h2>
+				<p class="info-1">Prezado, úsuário</p>
+				<p class="info-2">Acesso Negado. Atualmente você não possui acesso a este campo.</p>	
+			</div>
+			<div class="sem-acesso__botao">
+				<button class="cta" id="sem-acesso-fechar" aria-label="Fechar janela alert de acesso">OK</button>
+			</div>
+		</div>
+	</div>
 
 
 

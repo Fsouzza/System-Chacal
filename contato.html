@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./assets/css/rodape.css">
 	<link rel="stylesheet" href="./assets/css/contato.css">
 	<link rel="stylesheet" href="./assets/css/adress.css">
+	<link rel="stylesheet" href="./assets/css/alerts.css">
 	<title>Chacal Service | Entre em contato</title>
 </head>
 
@@ -165,6 +166,20 @@
 				<button class="cta btn-fechar" onclick="closeModal()" aria-label="Fechar janela modal"><i class="uil uil-multiply"></i></button>
 			</div>
 			<div class="dialog-overlay"></div>
+		</div>
+	</div>
+
+	<div class="container-acesso" aria-labelledby="tituloDialogAcesso">
+		<div class="dialog-sem-acesso">
+			<div class="modal">
+				<i class="uil uil-shield-slash sem-acesso__icon"></i>
+				<h2 class="sem-acesso__titulo">Atenção!</h2>
+				<p class="info-1">Prezado, úsuário</p>
+				<p class="info-2">Acesso Negado. Atualmente você não possui acesso a este campo.</p>	
+			</div>
+			<div class="sem-acesso__botao">
+				<button class="cta" id="sem-acesso-fechar" aria-label="Fechar janela alert de acesso">OK</button>
+			</div>
 		</div>
 	</div>
 

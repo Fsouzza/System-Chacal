@@ -1,11 +1,11 @@
-import { abrirSignup, closeAlert, closeSignup, openAlert } from './alert/alerts.js';
+import { abrirSignup, closeSignup } from './alert/alerts.js';
 import { valida } from './validacao.js'
 
 // VARIAVEIS DE VALIDACAO
 const inputs = document.querySelectorAll('input');
 
 // VARIAVEIS DE ALERT
-let signUp = document.querySelector('#sign-up');
+const signUp = document.querySelector('#sign-up');
 let closeBtnSignup = document.querySelector('.signup__icon');
 let btnOk = document.querySelector('.btnSignUp');
 

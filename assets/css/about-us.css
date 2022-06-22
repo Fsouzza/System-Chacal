@@ -40,13 +40,22 @@
     justify-content: center;
 }
 
-
 .about__quadro-esquerda img{
-    padding-top: 4rem;
+    padding-top: 3rem;
     height: 100%;
     max-height: 600px;
-    max-width: 600px;
-    
+    max-width: 660px;
+}
+
+.about__quadro-esquerda .img-principal{
+    position: absolute;
+    z-index: 3;
+}
+
+.about__quadro-esquerda .img-fundo{
+    position: relative;
+    height: 100%;
+    z-index: 2
 }
 
 

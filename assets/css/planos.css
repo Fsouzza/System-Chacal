@@ -151,6 +151,12 @@
     box-shadow: 0 2px 10px 2px #00000010;
 }
 
+.cartao:hover{
+    border: 2px solid var(--plano-vermelho);
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
 .cartao__titulo {
     font-weight: 700;
     font-size: 1.5rem;

@@ -6,12 +6,9 @@ let inputLogin = document.getElementById('username');
 let inputSenha = document.getElementById('senha');
 
 export function abrirSignup(){
-    let btnSignUp = document.querySelector('.btnSignUp');
-
     limpaInputs();
     formLogin.style.display = "none"
     msgSignUp.classList.add('show-modal-signup');
-    btnSignUp.focus();
 }
 
 
@@ -23,9 +20,10 @@ export function closeSignup(){
 
 
 export function limpaInputs(){
+    msgSignUp.classList.remove('show-modal-signup');
     inputLogin.value = '';
     inputSenha.value = '';
-    msgSignUp.classList.remove('show-modal-signup');
+    return
 }
 
 

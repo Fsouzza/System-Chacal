@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap');
+@import url("./menu.css");
+@import url("./alerts.css");
 
 .fundo{
 	background-color: var(--cor-selecionado);
@@ -64,23 +66,23 @@
 
 
 .input--user{
-	background-image: url(../img/user.svg);
+	background-image: url(../../img/user.svg);
 	height: 36px;
 }
 
 .input-container--invalido .input--user{
-	background-image: url(../img/user-erro.svg);
+	background-image: url(../../img/user-erro.svg);
 	height: 35px;
 }
 
 
 .input--senha{
-	background-image: url(../img/lock.svg);
+	background-image: url(../../img/lock.svg);
 	height: 36px;
 }
 
 .input-container--invalido .input--senha{
-	background-image: url(../img/lock-erro.svg);
+	background-image: url(../../img/lock-erro.svg);
 	height: 35px;
 }
 

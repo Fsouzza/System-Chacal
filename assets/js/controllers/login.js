@@ -1,6 +1,6 @@
 // FUNCOES DE ACESSO
 function acessoPermitido(){
-	location.href = "../pages/home.html";
+	location.href = "pages/home.html";
 }
 
 function acessoNegado(){

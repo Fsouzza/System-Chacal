@@ -15,7 +15,7 @@ function acessar(){
 	let login = document.getElementById('username').value;
 	let senha = document.getElementById('senha').value;
 
-	if(login == "@admin" && senha == "Ch@cal3107"){
+	if(login == "@admin" && senha == "admin"){
 		acessoPermitido();	
 	} else{
 		acessoNegado();
